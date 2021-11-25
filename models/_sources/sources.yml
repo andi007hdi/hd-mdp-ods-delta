@@ -1,0 +1,86 @@
+version: 2
+
+sources:
+  - name: da
+    database: DWHHD_DEV
+    schema: da
+    tables:
+      # Quellen für AD_MOD_PARTNER
+      - name: vg_anschrift_akt
+      - name: vg_bankverbindung_akt
+      - name: vg_betriebswirtschaftdaten_akt
+      - name: vg_coc_auftrag_partner_akt
+      - name: vg_externereferenz_partner_akt
+      - name: vg_kommunikationskanal_akt
+      - name: vg_kostenstelle_akt
+      - name: vg_kostenstelle_zuordnung_akt
+      - name: vg_marketingmassnahme_akt
+      - name: vg_partner_akt
+      - name: vg_partner_kennzeichen_akt
+      - name: vg_partnerbeziehung_akt
+      - name: vg_vermittlervereinbarung_akt
+      - name: vg_vermittlervertrag_akt
+      - name: vg_wirtschaftszweig_akt
+
+      # Quellen für AD_MOD_VERTRAG
+      - name: vg_coc_auftrag_vertrag_akt
+      - name: vg_externereferenz_akt
+      - name: vg_internereferenz_akt
+      - name: vg_lv_bezugsrecht_akt
+      - name: vg_lv_leistung_akt
+      - name: vg_mahnung_akt
+      - name: vg_rolle_akt
+      - name: vg_vertrag_akt
+      - name: vg_vertragsbeziehung_akt
+      - name: vg_vertragskontext_akt
+      - name: vg_beitrag_akt
+      - name: vg_bonusmalus_akt
+      - name: vg_deckung_akt
+      - name: vg_drittrechtglaeubiger_akt
+      - name: vg_fremdvertrag_akt
+      - name: vg_kfzspezifischemerkmale_akt
+      - name: vg_klauselnbedingungen_akt
+      - name: vg_kraftfahrzeug_akt
+      - name: vg_lv_leistung_flv_akt
+      - name: vg_lv_leistung_konv_akt
+      - name: vg_nutzer_akt
+      - name: vg_selbstbehalte_akt
+      - name: vg_stufung_akt
+      - name: vg_typregio_akt
+      - name: vg_versichertesobjekt_akt
+      - name: vg_versichertesobjektkfz_akt
+      - name: vg_vertragstandard_akt
+      - name: vg_vertragsteil_akt
+      - name: vg_vertragsteilbuendel_akt
+      - name: vg_zuschl_nachl_akt
+      - name: vg_wertungsgrundlteilung_akt
+
+      # Quellen für FILTER_VERTRAG_CRM
+      - name: od_vertragskontext_akt
+
+      # Quellen für AD_MOD_PARTNER_COC
+      - name: od_coc_auftrag_partner_akt
+      # + ad_mod_partner
+
+      # Quellen für AD_MOD_VERTRAG_COC
+      - name: od_coc_auftrag_vertrag_akt
+      # + ad_mod_vertrag
+
+      # Quellen für AD_CHNG_VERTRAG_STATUS
+      - name: od_vertrag_akt
+      - name: vs_vertrag
+      # + od_vertragskontext_akt
+
+      # Quellen für AD_MOD_SCHADEN
+      - name: vg_schaden_akt
+      - name: vg_schaden_art_akt
+      - name: vg_schadenereignis_akt
+      - name: vg_schadenereignis_bez_akt
+      - name: vg_schadenkategorie_akt
+      - name: vg_schadenrolle_akt
+      - name: vg_schadenzahlung_akt
+
+      # Quellen für AD_MOD_SCHADEN_COC
+      - name: od_schaden_akt
+      # + od_coc_auftrag_vertrag_akt
+      # + ad_mod_schaden
