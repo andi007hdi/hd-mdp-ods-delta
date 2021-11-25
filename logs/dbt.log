@@ -23385,3 +23385,2475 @@ Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
 2021-11-25 12:33:38.693357 (MainThread): Flushing usage events
 2021-11-25 12:33:38.721394 (MainThread): The 'warn' method is deprecated, use 'warning' instead
 2021-11-25 12:33:38.721394 (MainThread): Error sending message, disabling tracking
+2021-11-25 14:03:28.435695 (MainThread): Running with dbt=0.19.1
+2021-11-25 14:03:29.858727 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='C:\\Users\\059603\\.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-11-25 14:03:29.861752 (MainThread): Tracking: tracking
+2021-11-25 14:03:29.862737 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A1F41D588>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A1F41D488>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A1F41D348>]}
+2021-11-25 14:03:29.884725 (MainThread): Partial parsing not enabled
+2021-11-25 14:03:29.885724 (MainThread): Parsing macros\generate_schema_name.sql
+2021-11-25 14:03:29.889730 (MainThread): Parsing macros\adapters.sql
+2021-11-25 14:03:29.968736 (MainThread): Parsing macros\catalog.sql
+2021-11-25 14:03:29.972728 (MainThread): Parsing macros\materializations\incremental.sql
+2021-11-25 14:03:29.996729 (MainThread): Parsing macros\materializations\merge.sql
+2021-11-25 14:03:30.001730 (MainThread): Parsing macros\materializations\table.sql
+2021-11-25 14:03:30.016730 (MainThread): Parsing macros\materializations\view.sql
+2021-11-25 14:03:30.037728 (MainThread): Parsing macros\core.sql
+2021-11-25 14:03:30.049729 (MainThread): Parsing macros\adapters\common.sql
+2021-11-25 14:03:30.178731 (MainThread): Parsing macros\etc\datetime.sql
+2021-11-25 14:03:30.216730 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2021-11-25 14:03:30.221733 (MainThread): Parsing macros\etc\get_custom_database.sql
+2021-11-25 14:03:30.225734 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2021-11-25 14:03:30.230731 (MainThread): Parsing macros\etc\is_incremental.sql
+2021-11-25 14:03:30.234734 (MainThread): Parsing macros\etc\query.sql
+2021-11-25 14:03:30.240737 (MainThread): Parsing macros\materializations\helpers.sql
+2021-11-25 14:03:30.260736 (MainThread): Parsing macros\materializations\common\merge.sql
+2021-11-25 14:03:30.295737 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2021-11-25 14:03:30.301738 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2021-11-25 14:03:30.334734 (MainThread): Parsing macros\materializations\seed\seed.sql
+2021-11-25 14:03:30.398740 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2021-11-25 14:03:30.474748 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2021-11-25 14:03:30.480745 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2021-11-25 14:03:30.517737 (MainThread): Parsing macros\materializations\table\table.sql
+2021-11-25 14:03:30.531738 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2021-11-25 14:03:30.541738 (MainThread): Parsing macros\materializations\view\view.sql
+2021-11-25 14:03:30.554740 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2021-11-25 14:03:30.560738 (MainThread): Parsing macros\schema_tests\not_null.sql
+2021-11-25 14:03:30.563738 (MainThread): Parsing macros\schema_tests\relationships.sql
+2021-11-25 14:03:30.567750 (MainThread): Parsing macros\schema_tests\unique.sql
+2021-11-25 14:03:30.582743 (MainThread): Partial parsing not enabled
+2021-11-25 14:03:30.637744 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.ad_chng_vertrag_status".
+2021-11-25 14:03:30.661744 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_partner".
+2021-11-25 14:03:30.685744 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_partner_coc".
+2021-11-25 14:03:30.768746 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_schaden".
+2021-11-25 14:03:30.784748 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_schaden_coc".
+2021-11-25 14:03:30.795744 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_vertrag".
+2021-11-25 14:03:30.822748 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_vertrag_coc".
+2021-11-25 14:03:30.834747 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.filter_vertrag_crm".
+2021-11-25 14:03:30.844749 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.od_coc_auftrag_partner_akt".
+2021-11-25 14:03:30.853749 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.od_coc_auftrag_vertrag_akt".
+2021-11-25 14:03:30.862748 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.od_schaden_akt".
+2021-11-25 14:03:30.871748 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.od_vertragskontext_akt".
+2021-11-25 14:03:30.881749 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.od_vertrag_akt".
+2021-11-25 14:03:30.890749 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_anschrift_akt".
+2021-11-25 14:03:30.899752 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_bankverbindung_akt".
+2021-11-25 14:03:30.911750 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_beitrag_akt".
+2021-11-25 14:03:30.918749 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_betriebswirtschaftdaten_akt".
+2021-11-25 14:03:30.930751 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_bonusmalus_akt".
+2021-11-25 14:03:30.940751 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_coc_auftrag_partner_akt".
+2021-11-25 14:03:30.949749 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_coc_auftrag_vertrag_akt".
+2021-11-25 14:03:30.958757 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_deckung_akt".
+2021-11-25 14:03:30.967751 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_drittrechtglaeubiger_akt".
+2021-11-25 14:03:30.977752 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_externereferenz_akt".
+2021-11-25 14:03:30.986753 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_externereferenz_partner_akt".
+2021-11-25 14:03:30.996753 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_fremdvertrag_akt".
+2021-11-25 14:03:31.008747 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_internereferenz_akt".
+2021-11-25 14:03:31.019752 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kfzspezifischemerkmale_akt".
+2021-11-25 14:03:31.026753 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_klauselnbedingungen_akt".
+2021-11-25 14:03:31.033751 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kommunikationskanal_akt".
+2021-11-25 14:03:31.041752 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kostenstelle_akt".
+2021-11-25 14:03:31.052761 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kostenstelle_zuordnung_akt".
+2021-11-25 14:03:31.061752 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kraftfahrzeug_akt".
+2021-11-25 14:03:31.070750 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_lv_bezugsrecht_akt".
+2021-11-25 14:03:31.079752 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_lv_leistung_akt".
+2021-11-25 14:03:31.087752 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_lv_leistung_flv_akt".
+2021-11-25 14:03:31.098762 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_lv_leistung_konv_akt".
+2021-11-25 14:03:31.108754 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_mahnung_akt".
+2021-11-25 14:03:31.117755 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_marketingmassnahme_akt".
+2021-11-25 14:03:31.126751 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_nutzer_akt".
+2021-11-25 14:03:31.134755 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_partnerbeziehung_akt".
+2021-11-25 14:03:31.145755 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_partner_akt".
+2021-11-25 14:03:31.154755 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_partner_kennzeichen_akt".
+2021-11-25 14:03:31.164756 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_rolle_akt".
+2021-11-25 14:03:31.180754 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenereignis_akt".
+2021-11-25 14:03:31.189755 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenereignis_bez_akt".
+2021-11-25 14:03:31.196754 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenkategorie_akt".
+2021-11-25 14:03:31.205759 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenrolle_akt".
+2021-11-25 14:03:31.215758 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenzahlung_akt".
+2021-11-25 14:03:31.225757 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schaden_akt".
+2021-11-25 14:03:31.235754 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schaden_art_akt".
+2021-11-25 14:03:31.245756 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_selbstbehalte_akt".
+2021-11-25 14:03:31.261758 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_stufung_akt".
+2021-11-25 14:03:31.278757 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_typregio_akt".
+2021-11-25 14:03:31.287758 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vermittlervereinbarung_akt".
+2021-11-25 14:03:31.299758 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vermittlervertrag_akt".
+2021-11-25 14:03:31.312759 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_versichertesobjektkfz_akt".
+2021-11-25 14:03:31.324759 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_versichertesobjekt_akt".
+2021-11-25 14:03:31.334759 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragsbeziehung_akt".
+2021-11-25 14:03:31.345755 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragskontext_akt".
+2021-11-25 14:03:31.354758 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragstandard_akt".
+2021-11-25 14:03:31.367758 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragsteilbuendel_akt".
+2021-11-25 14:03:31.380756 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragsteil_akt".
+2021-11-25 14:03:31.389760 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertrag_akt".
+2021-11-25 14:03:31.398760 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_wertungsgrundlteilung_akt".
+2021-11-25 14:03:31.409755 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_wirtschaftszweig_akt".
+2021-11-25 14:03:31.418757 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_zuschl_nachl_akt".
+2021-11-25 14:03:31.427761 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vs_vertrag".
+2021-11-25 14:03:31.669762 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '67c3f80a-bddb-451f-aa53-07096f353741', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A1F694188>]}
+2021-11-25 14:03:31.702767 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '67c3f80a-bddb-451f-aa53-07096f353741', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A1F695288>]}
+2021-11-25 14:03:31.702767 (MainThread): Found 67 models, 0 tests, 0 snapshots, 0 analyses, 144 macros, 0 operations, 0 seed files, 59 sources, 0 exposures
+2021-11-25 14:03:31.714765 (MainThread): 
+2021-11-25 14:03:31.715764 (MainThread): Acquiring new snowflake connection "master".
+2021-11-25 14:03:31.717764 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DWHHD_DEV".
+2021-11-25 14:03:31.745764 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DWHHD_DEV".
+2021-11-25 14:03:31.745764 (ThreadPoolExecutor-0_0): On list_DWHHD_DEV: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "connection_name": "list_DWHHD_DEV"} */
+
+    show terse schemas in database DWHHD_DEV
+    limit 10000
+2021-11-25 14:03:31.745764 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-11-25 14:03:32.163781 (ThreadPoolExecutor-0_0): SelectableGroups dict interface is deprecated. Use select.
+2021-11-25 14:03:32.163781 (ThreadPoolExecutor-0_0): Loading KWallet
+2021-11-25 14:03:32.166777 (ThreadPoolExecutor-0_0): Loading SecretService
+2021-11-25 14:03:32.191780 (ThreadPoolExecutor-0_0): Loading Windows
+2021-11-25 14:03:32.372782 (ThreadPoolExecutor-0_0): Loading chainer
+2021-11-25 14:03:32.375783 (ThreadPoolExecutor-0_0): Loading macOS
+2021-11-25 14:03:33.209800 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 18 in 1.46 seconds
+2021-11-25 14:03:33.213800 (ThreadPoolExecutor-0_0): On list_DWHHD_DEV: Close
+2021-11-25 14:03:33.346803 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DWHHD_DEV_INM_DATASHARING".
+2021-11-25 14:03:33.381805 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DWHHD_DEV_INM_DATASHARING".
+2021-11-25 14:03:33.381805 (ThreadPoolExecutor-1_0): On list_DWHHD_DEV_INM_DATASHARING: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "connection_name": "list_DWHHD_DEV_INM_DATASHARING"} */
+
+    show terse objects in DWHHD_DEV.INM_DATASHARING
+2021-11-25 14:03:33.381805 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2021-11-25 14:03:33.727810 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 8 in 0.35 seconds
+2021-11-25 14:03:33.732813 (ThreadPoolExecutor-1_0): On list_DWHHD_DEV_INM_DATASHARING: Close
+2021-11-25 14:03:33.867822 (MainThread): Using snowflake connection "master".
+2021-11-25 14:03:33.868822 (MainThread): On master: BEGIN
+2021-11-25 14:03:33.868822 (MainThread): Opening a new connection, currently in state init
+2021-11-25 14:03:34.242828 (MainThread): SQL status: SUCCESS 1 in 0.37 seconds
+2021-11-25 14:03:34.242828 (MainThread): On master: COMMIT
+2021-11-25 14:03:34.242828 (MainThread): Using snowflake connection "master".
+2021-11-25 14:03:34.243828 (MainThread): On master: COMMIT
+2021-11-25 14:03:34.426833 (MainThread): SQL status: SUCCESS 1 in 0.18 seconds
+2021-11-25 14:03:34.427829 (MainThread): On master: Close
+2021-11-25 14:03:34.519827 (MainThread): 15:03:34 | Concurrency: 1 threads (target='dev')
+2021-11-25 14:03:34.519827 (MainThread): 15:03:34 | 
+2021-11-25 14:03:34.527827 (Thread-1): Began running node model.dbt_ods_delta.od_coc_auftrag_vertrag_akt
+2021-11-25 14:03:34.527827 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.od_coc_auftrag_vertrag_akt".
+2021-11-25 14:03:34.527827 (Thread-1): Compiling model.dbt_ods_delta.od_coc_auftrag_vertrag_akt
+2021-11-25 14:03:34.531829 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.od_coc_auftrag_vertrag_akt"
+2021-11-25 14:03:34.533830 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.533830 (Thread-1): Finished running node model.dbt_ods_delta.od_coc_auftrag_vertrag_akt
+2021-11-25 14:03:34.534829 (Thread-1): Began running node model.dbt_ods_delta.od_vertragskontext_akt
+2021-11-25 14:03:34.534829 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.od_vertragskontext_akt".
+2021-11-25 14:03:34.535830 (Thread-1): Compiling model.dbt_ods_delta.od_vertragskontext_akt
+2021-11-25 14:03:34.540827 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.od_vertragskontext_akt"
+2021-11-25 14:03:34.542829 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.542829 (Thread-1): Finished running node model.dbt_ods_delta.od_vertragskontext_akt
+2021-11-25 14:03:34.543827 (Thread-1): Began running node model.dbt_ods_delta.vg_anschrift_akt
+2021-11-25 14:03:34.544829 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_anschrift_akt".
+2021-11-25 14:03:34.544829 (Thread-1): Compiling model.dbt_ods_delta.vg_anschrift_akt
+2021-11-25 14:03:34.549831 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_anschrift_akt"
+2021-11-25 14:03:34.550833 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.551828 (Thread-1): Finished running node model.dbt_ods_delta.vg_anschrift_akt
+2021-11-25 14:03:34.551828 (Thread-1): Began running node model.dbt_ods_delta.vg_bankverbindung_akt
+2021-11-25 14:03:34.552832 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_bankverbindung_akt".
+2021-11-25 14:03:34.552832 (Thread-1): Compiling model.dbt_ods_delta.vg_bankverbindung_akt
+2021-11-25 14:03:34.556828 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_bankverbindung_akt"
+2021-11-25 14:03:34.557826 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.558833 (Thread-1): Finished running node model.dbt_ods_delta.vg_bankverbindung_akt
+2021-11-25 14:03:34.558833 (Thread-1): Began running node model.dbt_ods_delta.vg_beitrag_akt
+2021-11-25 14:03:34.559837 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_beitrag_akt".
+2021-11-25 14:03:34.559837 (Thread-1): Compiling model.dbt_ods_delta.vg_beitrag_akt
+2021-11-25 14:03:34.563828 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_beitrag_akt"
+2021-11-25 14:03:34.564827 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.564827 (Thread-1): Finished running node model.dbt_ods_delta.vg_beitrag_akt
+2021-11-25 14:03:34.564827 (Thread-1): Began running node model.dbt_ods_delta.vg_betriebswirtschaftdaten_akt
+2021-11-25 14:03:34.565829 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_betriebswirtschaftdaten_akt".
+2021-11-25 14:03:34.565829 (Thread-1): Compiling model.dbt_ods_delta.vg_betriebswirtschaftdaten_akt
+2021-11-25 14:03:34.569834 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_betriebswirtschaftdaten_akt"
+2021-11-25 14:03:34.570831 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.570831 (Thread-1): Finished running node model.dbt_ods_delta.vg_betriebswirtschaftdaten_akt
+2021-11-25 14:03:34.571832 (Thread-1): Began running node model.dbt_ods_delta.vg_bonusmalus_akt
+2021-11-25 14:03:34.571832 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_bonusmalus_akt".
+2021-11-25 14:03:34.571832 (Thread-1): Compiling model.dbt_ods_delta.vg_bonusmalus_akt
+2021-11-25 14:03:34.576831 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_bonusmalus_akt"
+2021-11-25 14:03:34.577831 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.577831 (Thread-1): Finished running node model.dbt_ods_delta.vg_bonusmalus_akt
+2021-11-25 14:03:34.578831 (Thread-1): Began running node model.dbt_ods_delta.vg_coc_auftrag_partner_akt
+2021-11-25 14:03:34.578831 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_coc_auftrag_partner_akt".
+2021-11-25 14:03:34.579831 (Thread-1): Compiling model.dbt_ods_delta.vg_coc_auftrag_partner_akt
+2021-11-25 14:03:34.582830 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_coc_auftrag_partner_akt"
+2021-11-25 14:03:34.583831 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.583831 (Thread-1): Finished running node model.dbt_ods_delta.vg_coc_auftrag_partner_akt
+2021-11-25 14:03:34.584830 (Thread-1): Began running node model.dbt_ods_delta.vg_coc_auftrag_vertrag_akt
+2021-11-25 14:03:34.584830 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_coc_auftrag_vertrag_akt".
+2021-11-25 14:03:34.584830 (Thread-1): Compiling model.dbt_ods_delta.vg_coc_auftrag_vertrag_akt
+2021-11-25 14:03:34.588831 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_coc_auftrag_vertrag_akt"
+2021-11-25 14:03:34.588831 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.589831 (Thread-1): Finished running node model.dbt_ods_delta.vg_coc_auftrag_vertrag_akt
+2021-11-25 14:03:34.589831 (Thread-1): Began running node model.dbt_ods_delta.vg_deckung_akt
+2021-11-25 14:03:34.590837 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_deckung_akt".
+2021-11-25 14:03:34.590837 (Thread-1): Compiling model.dbt_ods_delta.vg_deckung_akt
+2021-11-25 14:03:34.594832 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_deckung_akt"
+2021-11-25 14:03:34.594832 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.595831 (Thread-1): Finished running node model.dbt_ods_delta.vg_deckung_akt
+2021-11-25 14:03:34.595831 (Thread-1): Began running node model.dbt_ods_delta.vg_drittrechtglaeubiger_akt
+2021-11-25 14:03:34.596838 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_drittrechtglaeubiger_akt".
+2021-11-25 14:03:34.596838 (Thread-1): Compiling model.dbt_ods_delta.vg_drittrechtglaeubiger_akt
+2021-11-25 14:03:34.599830 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_drittrechtglaeubiger_akt"
+2021-11-25 14:03:34.600831 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.601830 (Thread-1): Finished running node model.dbt_ods_delta.vg_drittrechtglaeubiger_akt
+2021-11-25 14:03:34.601830 (Thread-1): Began running node model.dbt_ods_delta.vg_externereferenz_akt
+2021-11-25 14:03:34.602834 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_externereferenz_akt".
+2021-11-25 14:03:34.602834 (Thread-1): Compiling model.dbt_ods_delta.vg_externereferenz_akt
+2021-11-25 14:03:34.606831 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_externereferenz_akt"
+2021-11-25 14:03:34.607826 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.607826 (Thread-1): Finished running node model.dbt_ods_delta.vg_externereferenz_akt
+2021-11-25 14:03:34.607826 (Thread-1): Began running node model.dbt_ods_delta.vg_externereferenz_partner_akt
+2021-11-25 14:03:34.608826 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_externereferenz_partner_akt".
+2021-11-25 14:03:34.608826 (Thread-1): Compiling model.dbt_ods_delta.vg_externereferenz_partner_akt
+2021-11-25 14:03:34.611827 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_externereferenz_partner_akt"
+2021-11-25 14:03:34.612826 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.612826 (Thread-1): Finished running node model.dbt_ods_delta.vg_externereferenz_partner_akt
+2021-11-25 14:03:34.613831 (Thread-1): Began running node model.dbt_ods_delta.vg_fremdvertrag_akt
+2021-11-25 14:03:34.613831 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_fremdvertrag_akt".
+2021-11-25 14:03:34.613831 (Thread-1): Compiling model.dbt_ods_delta.vg_fremdvertrag_akt
+2021-11-25 14:03:34.617827 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_fremdvertrag_akt"
+2021-11-25 14:03:34.618827 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.618827 (Thread-1): Finished running node model.dbt_ods_delta.vg_fremdvertrag_akt
+2021-11-25 14:03:34.618827 (Thread-1): Began running node model.dbt_ods_delta.vg_internereferenz_akt
+2021-11-25 14:03:34.619827 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_internereferenz_akt".
+2021-11-25 14:03:34.619827 (Thread-1): Compiling model.dbt_ods_delta.vg_internereferenz_akt
+2021-11-25 14:03:34.622831 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_internereferenz_akt"
+2021-11-25 14:03:34.623831 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.624832 (Thread-1): Finished running node model.dbt_ods_delta.vg_internereferenz_akt
+2021-11-25 14:03:34.624832 (Thread-1): Began running node model.dbt_ods_delta.vg_kfzspezifischemerkmale_akt
+2021-11-25 14:03:34.624832 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kfzspezifischemerkmale_akt".
+2021-11-25 14:03:34.625838 (Thread-1): Compiling model.dbt_ods_delta.vg_kfzspezifischemerkmale_akt
+2021-11-25 14:03:34.628830 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_kfzspezifischemerkmale_akt"
+2021-11-25 14:03:34.629829 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.629829 (Thread-1): Finished running node model.dbt_ods_delta.vg_kfzspezifischemerkmale_akt
+2021-11-25 14:03:34.629829 (Thread-1): Began running node model.dbt_ods_delta.vg_klauselnbedingungen_akt
+2021-11-25 14:03:34.630847 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_klauselnbedingungen_akt".
+2021-11-25 14:03:34.630847 (Thread-1): Compiling model.dbt_ods_delta.vg_klauselnbedingungen_akt
+2021-11-25 14:03:34.633837 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_klauselnbedingungen_akt"
+2021-11-25 14:03:34.634835 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.635832 (Thread-1): Finished running node model.dbt_ods_delta.vg_klauselnbedingungen_akt
+2021-11-25 14:03:34.635832 (Thread-1): Began running node model.dbt_ods_delta.vg_kommunikationskanal_akt
+2021-11-25 14:03:34.636837 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kommunikationskanal_akt".
+2021-11-25 14:03:34.636837 (Thread-1): Compiling model.dbt_ods_delta.vg_kommunikationskanal_akt
+2021-11-25 14:03:34.639836 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_kommunikationskanal_akt"
+2021-11-25 14:03:34.640830 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.640830 (Thread-1): Finished running node model.dbt_ods_delta.vg_kommunikationskanal_akt
+2021-11-25 14:03:34.640830 (Thread-1): Began running node model.dbt_ods_delta.vg_kostenstelle_akt
+2021-11-25 14:03:34.641835 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kostenstelle_akt".
+2021-11-25 14:03:34.641835 (Thread-1): Compiling model.dbt_ods_delta.vg_kostenstelle_akt
+2021-11-25 14:03:34.644827 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_kostenstelle_akt"
+2021-11-25 14:03:34.645827 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.646836 (Thread-1): Finished running node model.dbt_ods_delta.vg_kostenstelle_akt
+2021-11-25 14:03:34.646836 (Thread-1): Began running node model.dbt_ods_delta.vg_kostenstelle_zuordnung_akt
+2021-11-25 14:03:34.647842 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kostenstelle_zuordnung_akt".
+2021-11-25 14:03:34.647842 (Thread-1): Compiling model.dbt_ods_delta.vg_kostenstelle_zuordnung_akt
+2021-11-25 14:03:34.651828 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_kostenstelle_zuordnung_akt"
+2021-11-25 14:03:34.652828 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.652828 (Thread-1): Finished running node model.dbt_ods_delta.vg_kostenstelle_zuordnung_akt
+2021-11-25 14:03:34.653836 (Thread-1): Began running node model.dbt_ods_delta.vg_kraftfahrzeug_akt
+2021-11-25 14:03:34.653836 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kraftfahrzeug_akt".
+2021-11-25 14:03:34.653836 (Thread-1): Compiling model.dbt_ods_delta.vg_kraftfahrzeug_akt
+2021-11-25 14:03:34.658835 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_kraftfahrzeug_akt"
+2021-11-25 14:03:34.659832 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.659832 (Thread-1): Finished running node model.dbt_ods_delta.vg_kraftfahrzeug_akt
+2021-11-25 14:03:34.660831 (Thread-1): Began running node model.dbt_ods_delta.vg_lv_bezugsrecht_akt
+2021-11-25 14:03:34.660831 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_lv_bezugsrecht_akt".
+2021-11-25 14:03:34.660831 (Thread-1): Compiling model.dbt_ods_delta.vg_lv_bezugsrecht_akt
+2021-11-25 14:03:34.664831 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_lv_bezugsrecht_akt"
+2021-11-25 14:03:34.665829 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.665829 (Thread-1): Finished running node model.dbt_ods_delta.vg_lv_bezugsrecht_akt
+2021-11-25 14:03:34.665829 (Thread-1): Began running node model.dbt_ods_delta.vg_lv_leistung_akt
+2021-11-25 14:03:34.666835 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_lv_leistung_akt".
+2021-11-25 14:03:34.666835 (Thread-1): Compiling model.dbt_ods_delta.vg_lv_leistung_akt
+2021-11-25 14:03:34.669829 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_lv_leistung_akt"
+2021-11-25 14:03:34.670829 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.670829 (Thread-1): Finished running node model.dbt_ods_delta.vg_lv_leistung_akt
+2021-11-25 14:03:34.671835 (Thread-1): Began running node model.dbt_ods_delta.vg_lv_leistung_flv_akt
+2021-11-25 14:03:34.671835 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_lv_leistung_flv_akt".
+2021-11-25 14:03:34.671835 (Thread-1): Compiling model.dbt_ods_delta.vg_lv_leistung_flv_akt
+2021-11-25 14:03:34.674849 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_lv_leistung_flv_akt"
+2021-11-25 14:03:34.675836 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.676839 (Thread-1): Finished running node model.dbt_ods_delta.vg_lv_leistung_flv_akt
+2021-11-25 14:03:34.676839 (Thread-1): Began running node model.dbt_ods_delta.vg_lv_leistung_konv_akt
+2021-11-25 14:03:34.676839 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_lv_leistung_konv_akt".
+2021-11-25 14:03:34.676839 (Thread-1): Compiling model.dbt_ods_delta.vg_lv_leistung_konv_akt
+2021-11-25 14:03:34.680852 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_lv_leistung_konv_akt"
+2021-11-25 14:03:34.681927 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.682833 (Thread-1): Finished running node model.dbt_ods_delta.vg_lv_leistung_konv_akt
+2021-11-25 14:03:34.682833 (Thread-1): Began running node model.dbt_ods_delta.vg_mahnung_akt
+2021-11-25 14:03:34.682833 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_mahnung_akt".
+2021-11-25 14:03:34.682833 (Thread-1): Compiling model.dbt_ods_delta.vg_mahnung_akt
+2021-11-25 14:03:34.686833 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_mahnung_akt"
+2021-11-25 14:03:34.687845 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.687845 (Thread-1): Finished running node model.dbt_ods_delta.vg_mahnung_akt
+2021-11-25 14:03:34.687845 (Thread-1): Began running node model.dbt_ods_delta.vg_marketingmassnahme_akt
+2021-11-25 14:03:34.688872 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_marketingmassnahme_akt".
+2021-11-25 14:03:34.688872 (Thread-1): Compiling model.dbt_ods_delta.vg_marketingmassnahme_akt
+2021-11-25 14:03:34.691890 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_marketingmassnahme_akt"
+2021-11-25 14:03:34.692833 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.693833 (Thread-1): Finished running node model.dbt_ods_delta.vg_marketingmassnahme_akt
+2021-11-25 14:03:34.693833 (Thread-1): Began running node model.dbt_ods_delta.vg_nutzer_akt
+2021-11-25 14:03:34.693833 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_nutzer_akt".
+2021-11-25 14:03:34.694838 (Thread-1): Compiling model.dbt_ods_delta.vg_nutzer_akt
+2021-11-25 14:03:34.697838 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_nutzer_akt"
+2021-11-25 14:03:34.698840 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.698840 (Thread-1): Finished running node model.dbt_ods_delta.vg_nutzer_akt
+2021-11-25 14:03:34.699868 (Thread-1): Began running node model.dbt_ods_delta.vg_partner_akt
+2021-11-25 14:03:34.699868 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_partner_akt".
+2021-11-25 14:03:34.699868 (Thread-1): Compiling model.dbt_ods_delta.vg_partner_akt
+2021-11-25 14:03:34.702833 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_partner_akt"
+2021-11-25 14:03:34.703845 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.704833 (Thread-1): Finished running node model.dbt_ods_delta.vg_partner_akt
+2021-11-25 14:03:34.704833 (Thread-1): Began running node model.dbt_ods_delta.vg_partner_kennzeichen_akt
+2021-11-25 14:03:34.704833 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_partner_kennzeichen_akt".
+2021-11-25 14:03:34.705848 (Thread-1): Compiling model.dbt_ods_delta.vg_partner_kennzeichen_akt
+2021-11-25 14:03:34.708829 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_partner_kennzeichen_akt"
+2021-11-25 14:03:34.709829 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.709829 (Thread-1): Finished running node model.dbt_ods_delta.vg_partner_kennzeichen_akt
+2021-11-25 14:03:34.709829 (Thread-1): Began running node model.dbt_ods_delta.vg_partnerbeziehung_akt
+2021-11-25 14:03:34.710836 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_partnerbeziehung_akt".
+2021-11-25 14:03:34.710836 (Thread-1): Compiling model.dbt_ods_delta.vg_partnerbeziehung_akt
+2021-11-25 14:03:34.713832 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_partnerbeziehung_akt"
+2021-11-25 14:03:34.714842 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.715837 (Thread-1): Finished running node model.dbt_ods_delta.vg_partnerbeziehung_akt
+2021-11-25 14:03:34.715837 (Thread-1): Began running node model.dbt_ods_delta.vg_rolle_akt
+2021-11-25 14:03:34.715837 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_rolle_akt".
+2021-11-25 14:03:34.715837 (Thread-1): Compiling model.dbt_ods_delta.vg_rolle_akt
+2021-11-25 14:03:34.719838 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_rolle_akt"
+2021-11-25 14:03:34.720831 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.720831 (Thread-1): Finished running node model.dbt_ods_delta.vg_rolle_akt
+2021-11-25 14:03:34.720831 (Thread-1): Began running node model.dbt_ods_delta.vg_schaden_akt
+2021-11-25 14:03:34.721868 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schaden_akt".
+2021-11-25 14:03:34.721868 (Thread-1): Compiling model.dbt_ods_delta.vg_schaden_akt
+2021-11-25 14:03:34.726862 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_schaden_akt"
+2021-11-25 14:03:34.727921 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.728873 (Thread-1): Finished running node model.dbt_ods_delta.vg_schaden_akt
+2021-11-25 14:03:34.728873 (Thread-1): Began running node model.dbt_ods_delta.vg_schaden_art_akt
+2021-11-25 14:03:34.729843 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schaden_art_akt".
+2021-11-25 14:03:34.729843 (Thread-1): Compiling model.dbt_ods_delta.vg_schaden_art_akt
+2021-11-25 14:03:34.734836 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_schaden_art_akt"
+2021-11-25 14:03:34.735836 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.735836 (Thread-1): Finished running node model.dbt_ods_delta.vg_schaden_art_akt
+2021-11-25 14:03:34.736835 (Thread-1): Began running node model.dbt_ods_delta.vg_schadenereignis_akt
+2021-11-25 14:03:34.736835 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenereignis_akt".
+2021-11-25 14:03:34.736835 (Thread-1): Compiling model.dbt_ods_delta.vg_schadenereignis_akt
+2021-11-25 14:03:34.740835 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_schadenereignis_akt"
+2021-11-25 14:03:34.741835 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.742836 (Thread-1): Finished running node model.dbt_ods_delta.vg_schadenereignis_akt
+2021-11-25 14:03:34.742836 (Thread-1): Began running node model.dbt_ods_delta.vg_schadenereignis_bez_akt
+2021-11-25 14:03:34.743834 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenereignis_bez_akt".
+2021-11-25 14:03:34.743834 (Thread-1): Compiling model.dbt_ods_delta.vg_schadenereignis_bez_akt
+2021-11-25 14:03:34.747836 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_schadenereignis_bez_akt"
+2021-11-25 14:03:34.748834 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.748834 (Thread-1): Finished running node model.dbt_ods_delta.vg_schadenereignis_bez_akt
+2021-11-25 14:03:34.748834 (Thread-1): Began running node model.dbt_ods_delta.vg_schadenkategorie_akt
+2021-11-25 14:03:34.749843 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenkategorie_akt".
+2021-11-25 14:03:34.749843 (Thread-1): Compiling model.dbt_ods_delta.vg_schadenkategorie_akt
+2021-11-25 14:03:34.753834 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_schadenkategorie_akt"
+2021-11-25 14:03:34.754835 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.755836 (Thread-1): Finished running node model.dbt_ods_delta.vg_schadenkategorie_akt
+2021-11-25 14:03:34.755836 (Thread-1): Began running node model.dbt_ods_delta.vg_schadenrolle_akt
+2021-11-25 14:03:34.756835 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenrolle_akt".
+2021-11-25 14:03:34.756835 (Thread-1): Compiling model.dbt_ods_delta.vg_schadenrolle_akt
+2021-11-25 14:03:34.759834 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_schadenrolle_akt"
+2021-11-25 14:03:34.761831 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.761831 (Thread-1): Finished running node model.dbt_ods_delta.vg_schadenrolle_akt
+2021-11-25 14:03:34.761831 (Thread-1): Began running node model.dbt_ods_delta.vg_schadenzahlung_akt
+2021-11-25 14:03:34.762829 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenzahlung_akt".
+2021-11-25 14:03:34.762829 (Thread-1): Compiling model.dbt_ods_delta.vg_schadenzahlung_akt
+2021-11-25 14:03:34.765829 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_schadenzahlung_akt"
+2021-11-25 14:03:34.767829 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.767829 (Thread-1): Finished running node model.dbt_ods_delta.vg_schadenzahlung_akt
+2021-11-25 14:03:34.768829 (Thread-1): Began running node model.dbt_ods_delta.vg_selbstbehalte_akt
+2021-11-25 14:03:34.768829 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_selbstbehalte_akt".
+2021-11-25 14:03:34.769840 (Thread-1): Compiling model.dbt_ods_delta.vg_selbstbehalte_akt
+2021-11-25 14:03:34.774833 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_selbstbehalte_akt"
+2021-11-25 14:03:34.775839 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.776835 (Thread-1): Finished running node model.dbt_ods_delta.vg_selbstbehalte_akt
+2021-11-25 14:03:34.776835 (Thread-1): Began running node model.dbt_ods_delta.vg_stufung_akt
+2021-11-25 14:03:34.777833 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_stufung_akt".
+2021-11-25 14:03:34.777833 (Thread-1): Compiling model.dbt_ods_delta.vg_stufung_akt
+2021-11-25 14:03:34.780829 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_stufung_akt"
+2021-11-25 14:03:34.781831 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.782831 (Thread-1): Finished running node model.dbt_ods_delta.vg_stufung_akt
+2021-11-25 14:03:34.782831 (Thread-1): Began running node model.dbt_ods_delta.vg_typregio_akt
+2021-11-25 14:03:34.783830 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_typregio_akt".
+2021-11-25 14:03:34.783830 (Thread-1): Compiling model.dbt_ods_delta.vg_typregio_akt
+2021-11-25 14:03:34.786840 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_typregio_akt"
+2021-11-25 14:03:34.787836 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.788833 (Thread-1): Finished running node model.dbt_ods_delta.vg_typregio_akt
+2021-11-25 14:03:34.788833 (Thread-1): Began running node model.dbt_ods_delta.vg_vermittlervereinbarung_akt
+2021-11-25 14:03:34.789838 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vermittlervereinbarung_akt".
+2021-11-25 14:03:34.789838 (Thread-1): Compiling model.dbt_ods_delta.vg_vermittlervereinbarung_akt
+2021-11-25 14:03:34.794832 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_vermittlervereinbarung_akt"
+2021-11-25 14:03:34.797837 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.797837 (Thread-1): Finished running node model.dbt_ods_delta.vg_vermittlervereinbarung_akt
+2021-11-25 14:03:34.797837 (Thread-1): Began running node model.dbt_ods_delta.vg_vermittlervertrag_akt
+2021-11-25 14:03:34.798835 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vermittlervertrag_akt".
+2021-11-25 14:03:34.798835 (Thread-1): Compiling model.dbt_ods_delta.vg_vermittlervertrag_akt
+2021-11-25 14:03:34.802837 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_vermittlervertrag_akt"
+2021-11-25 14:03:34.803837 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.803837 (Thread-1): Finished running node model.dbt_ods_delta.vg_vermittlervertrag_akt
+2021-11-25 14:03:34.803837 (Thread-1): Began running node model.dbt_ods_delta.vg_versichertesobjekt_akt
+2021-11-25 14:03:34.804837 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_versichertesobjekt_akt".
+2021-11-25 14:03:34.804837 (Thread-1): Compiling model.dbt_ods_delta.vg_versichertesobjekt_akt
+2021-11-25 14:03:34.808835 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_versichertesobjekt_akt"
+2021-11-25 14:03:34.809837 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.809837 (Thread-1): Finished running node model.dbt_ods_delta.vg_versichertesobjekt_akt
+2021-11-25 14:03:34.810837 (Thread-1): Began running node model.dbt_ods_delta.vg_versichertesobjektkfz_akt
+2021-11-25 14:03:34.810837 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_versichertesobjektkfz_akt".
+2021-11-25 14:03:34.810837 (Thread-1): Compiling model.dbt_ods_delta.vg_versichertesobjektkfz_akt
+2021-11-25 14:03:34.814837 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_versichertesobjektkfz_akt"
+2021-11-25 14:03:34.815836 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.815836 (Thread-1): Finished running node model.dbt_ods_delta.vg_versichertesobjektkfz_akt
+2021-11-25 14:03:34.816836 (Thread-1): Began running node model.dbt_ods_delta.vg_vertrag_akt
+2021-11-25 14:03:34.816836 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertrag_akt".
+2021-11-25 14:03:34.816836 (Thread-1): Compiling model.dbt_ods_delta.vg_vertrag_akt
+2021-11-25 14:03:34.820836 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_vertrag_akt"
+2021-11-25 14:03:34.821838 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.822834 (Thread-1): Finished running node model.dbt_ods_delta.vg_vertrag_akt
+2021-11-25 14:03:34.822834 (Thread-1): Began running node model.dbt_ods_delta.vg_vertragsbeziehung_akt
+2021-11-25 14:03:34.823836 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragsbeziehung_akt".
+2021-11-25 14:03:34.823836 (Thread-1): Compiling model.dbt_ods_delta.vg_vertragsbeziehung_akt
+2021-11-25 14:03:34.826837 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_vertragsbeziehung_akt"
+2021-11-25 14:03:34.827836 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.828835 (Thread-1): Finished running node model.dbt_ods_delta.vg_vertragsbeziehung_akt
+2021-11-25 14:03:34.828835 (Thread-1): Began running node model.dbt_ods_delta.vg_vertragskontext_akt
+2021-11-25 14:03:34.829835 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragskontext_akt".
+2021-11-25 14:03:34.829835 (Thread-1): Compiling model.dbt_ods_delta.vg_vertragskontext_akt
+2021-11-25 14:03:34.833838 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_vertragskontext_akt"
+2021-11-25 14:03:34.835832 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.835832 (Thread-1): Finished running node model.dbt_ods_delta.vg_vertragskontext_akt
+2021-11-25 14:03:34.835832 (Thread-1): Began running node model.dbt_ods_delta.vg_vertragstandard_akt
+2021-11-25 14:03:34.836834 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragstandard_akt".
+2021-11-25 14:03:34.836834 (Thread-1): Compiling model.dbt_ods_delta.vg_vertragstandard_akt
+2021-11-25 14:03:34.840831 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_vertragstandard_akt"
+2021-11-25 14:03:34.841832 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.841832 (Thread-1): Finished running node model.dbt_ods_delta.vg_vertragstandard_akt
+2021-11-25 14:03:34.842832 (Thread-1): Began running node model.dbt_ods_delta.vg_vertragsteil_akt
+2021-11-25 14:03:34.842832 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragsteil_akt".
+2021-11-25 14:03:34.842832 (Thread-1): Compiling model.dbt_ods_delta.vg_vertragsteil_akt
+2021-11-25 14:03:34.846835 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_vertragsteil_akt"
+2021-11-25 14:03:34.847836 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.848837 (Thread-1): Finished running node model.dbt_ods_delta.vg_vertragsteil_akt
+2021-11-25 14:03:34.848837 (Thread-1): Began running node model.dbt_ods_delta.vg_vertragsteilbuendel_akt
+2021-11-25 14:03:34.849836 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragsteilbuendel_akt".
+2021-11-25 14:03:34.849836 (Thread-1): Compiling model.dbt_ods_delta.vg_vertragsteilbuendel_akt
+2021-11-25 14:03:34.853838 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_vertragsteilbuendel_akt"
+2021-11-25 14:03:34.855846 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.856833 (Thread-1): Finished running node model.dbt_ods_delta.vg_vertragsteilbuendel_akt
+2021-11-25 14:03:34.856833 (Thread-1): Began running node model.dbt_ods_delta.vg_wertungsgrundlteilung_akt
+2021-11-25 14:03:34.857839 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_wertungsgrundlteilung_akt".
+2021-11-25 14:03:34.857839 (Thread-1): Compiling model.dbt_ods_delta.vg_wertungsgrundlteilung_akt
+2021-11-25 14:03:34.862841 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_wertungsgrundlteilung_akt"
+2021-11-25 14:03:34.863838 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.863838 (Thread-1): Finished running node model.dbt_ods_delta.vg_wertungsgrundlteilung_akt
+2021-11-25 14:03:34.864842 (Thread-1): Began running node model.dbt_ods_delta.vg_wirtschaftszweig_akt
+2021-11-25 14:03:34.864842 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_wirtschaftszweig_akt".
+2021-11-25 14:03:34.865839 (Thread-1): Compiling model.dbt_ods_delta.vg_wirtschaftszweig_akt
+2021-11-25 14:03:34.870838 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_wirtschaftszweig_akt"
+2021-11-25 14:03:34.871838 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.872839 (Thread-1): Finished running node model.dbt_ods_delta.vg_wirtschaftszweig_akt
+2021-11-25 14:03:34.872839 (Thread-1): Began running node model.dbt_ods_delta.vg_zuschl_nachl_akt
+2021-11-25 14:03:34.873838 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_zuschl_nachl_akt".
+2021-11-25 14:03:34.873838 (Thread-1): Compiling model.dbt_ods_delta.vg_zuschl_nachl_akt
+2021-11-25 14:03:34.879839 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_zuschl_nachl_akt"
+2021-11-25 14:03:34.881840 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.881840 (Thread-1): Finished running node model.dbt_ods_delta.vg_zuschl_nachl_akt
+2021-11-25 14:03:34.882839 (Thread-1): Began running node model.dbt_ods_delta.od_coc_auftrag_partner_akt
+2021-11-25 14:03:34.882839 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.od_coc_auftrag_partner_akt".
+2021-11-25 14:03:34.882839 (Thread-1): Compiling model.dbt_ods_delta.od_coc_auftrag_partner_akt
+2021-11-25 14:03:34.886838 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.od_coc_auftrag_partner_akt"
+2021-11-25 14:03:34.887839 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.888839 (Thread-1): Finished running node model.dbt_ods_delta.od_coc_auftrag_partner_akt
+2021-11-25 14:03:34.888839 (Thread-1): Began running node model.dbt_ods_delta.od_schaden_akt
+2021-11-25 14:03:34.888839 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.od_schaden_akt".
+2021-11-25 14:03:34.889839 (Thread-1): Compiling model.dbt_ods_delta.od_schaden_akt
+2021-11-25 14:03:34.892839 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.od_schaden_akt"
+2021-11-25 14:03:34.895838 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.896838 (Thread-1): Finished running node model.dbt_ods_delta.od_schaden_akt
+2021-11-25 14:03:34.896838 (Thread-1): Began running node model.dbt_ods_delta.od_vertrag_akt
+2021-11-25 14:03:34.896838 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.od_vertrag_akt".
+2021-11-25 14:03:34.897838 (Thread-1): Compiling model.dbt_ods_delta.od_vertrag_akt
+2021-11-25 14:03:34.902839 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.od_vertrag_akt"
+2021-11-25 14:03:34.903839 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.904839 (Thread-1): Finished running node model.dbt_ods_delta.od_vertrag_akt
+2021-11-25 14:03:34.904839 (Thread-1): Began running node model.dbt_ods_delta.vs_vertrag
+2021-11-25 14:03:34.905837 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vs_vertrag".
+2021-11-25 14:03:34.905837 (Thread-1): Compiling model.dbt_ods_delta.vs_vertrag
+2021-11-25 14:03:34.908839 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vs_vertrag"
+2021-11-25 14:03:34.909839 (Thread-1): finished collecting timing info
+2021-11-25 14:03:34.909839 (Thread-1): Finished running node model.dbt_ods_delta.vs_vertrag
+2021-11-25 14:03:34.910842 (Thread-1): Began running node model.dbt_ods_delta.filter_vertrag_crm
+2021-11-25 14:03:34.910842 (Thread-1): 15:03:34 | 1 of 8 START table model INM_DATASHARING.filter_vertrag_crm.......... [RUN]
+2021-11-25 14:03:34.911838 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.filter_vertrag_crm".
+2021-11-25 14:03:34.911838 (Thread-1): Compiling model.dbt_ods_delta.filter_vertrag_crm
+2021-11-25 14:03:34.971845 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.filter_vertrag_crm"
+2021-11-25 14:03:34.973841 (Thread-1): finished collecting timing info
+2021-11-25 14:03:35.032849 (Thread-1): Writing runtime SQL for node "model.dbt_ods_delta.filter_vertrag_crm"
+2021-11-25 14:03:35.037841 (Thread-1): Using snowflake connection "model.dbt_ods_delta.filter_vertrag_crm".
+2021-11-25 14:03:35.037841 (Thread-1): On model.dbt_ods_delta.filter_vertrag_crm: BEGIN
+2021-11-25 14:03:35.037841 (Thread-1): Opening a new connection, currently in state init
+2021-11-25 14:03:35.401852 (Thread-1): SQL status: SUCCESS 1 in 0.36 seconds
+2021-11-25 14:03:35.401852 (Thread-1): Using snowflake connection "model.dbt_ods_delta.filter_vertrag_crm".
+2021-11-25 14:03:35.401852 (Thread-1): On model.dbt_ods_delta.filter_vertrag_crm: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_ods_delta.filter_vertrag_crm"} */
+
+
+      create or replace transient table DWHHD_DEV.INM_DATASHARING.filter_vertrag_crm  as
+      (
+
+with  __dbt__CTE__od_vertragskontext_akt as (
+select *
+from DWHHD_DEV.da.od_vertragskontext_akt
+),source_data as (
+
+ SELECT vk.TIK_VERTRAG
+  FROM __dbt__CTE__od_vertragskontext_akt VK
+  WHERE VK.BESTANDSSCHLUESSEL NOT IN ('22','25')
+  AND ( VK.BESTANDSSCHLUESSEL NOT IN ('44')
+  OR VK.BESTANDSFUEHRUNG           ='23' )
+  AND ( VK.VERTRAGTYP             <> '18'
+  OR VK.VERTRAGTYP                IS NULL
+  OR vk.BESTANDSFUEHRUNG          <> '28'
+  OR vk.BESTANDSFUEHRUNG          IS NULL )
+  AND ( VK.VERTRAGTYP NOT         IN ('18','20')
+  OR VK.VERTRAGTYP                IS NULL
+  OR vk.BESTANDSFUEHRUNG          <> '29'
+  OR vk.BESTANDSFUEHRUNG          IS NULL )
+  AND ( VK.STATUS NOT             IN ('ABG','ABGNG','ANGEB','ANGEBO','ANTR','KB','RUH','STOR')
+  OR VK.STATUS                    IS NULL
+  OR NVL(VK.STATUSDATUM,current_timestamp) > dateadd(year, -10, to_date(current_timestamp))
+  OR VK.BESTANDSSCHLUESSEL        <> '80' )
+  AND ( VK.STATUS NOT             IN ('ABG','ABGNG','ANGEB','ANGEBO','ANTR','KB','RUH','STOR')
+  OR VK.STATUS                    IS NULL
+  OR NVL(VK.STATUSDATUM,current_timestamp) > dateadd(year, -10, to_date(current_timestamp))
+  OR VK.BESTANDSSCHLUESSEL         = '80' )
+  AND VK.VERTRAGOB                <>'000000000'
+
+					)
+
+select *
+from source_data
+      );
+2021-11-25 14:03:42.977445 (Thread-1): SQL status: SUCCESS 1 in 7.58 seconds
+2021-11-25 14:03:42.979535 (Thread-1): On model.dbt_ods_delta.filter_vertrag_crm: COMMIT
+2021-11-25 14:03:42.979535 (Thread-1): Using snowflake connection "model.dbt_ods_delta.filter_vertrag_crm".
+2021-11-25 14:03:42.979535 (Thread-1): On model.dbt_ods_delta.filter_vertrag_crm: COMMIT
+2021-11-25 14:03:43.096448 (Thread-1): SQL status: SUCCESS 1 in 0.12 seconds
+2021-11-25 14:03:43.119474 (Thread-1): finished collecting timing info
+2021-11-25 14:03:43.119474 (Thread-1): On model.dbt_ods_delta.filter_vertrag_crm: Close
+2021-11-25 14:03:43.404346 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '67c3f80a-bddb-451f-aa53-07096f353741', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A1F78C608>]}
+2021-11-25 14:03:43.405341 (Thread-1): 15:03:43 | 1 of 8 OK created table model INM_DATASHARING.filter_vertrag_crm..... [SUCCESS 1 in 8.49s]
+2021-11-25 14:03:43.405341 (Thread-1): Finished running node model.dbt_ods_delta.filter_vertrag_crm
+2021-11-25 14:03:43.406337 (Thread-1): Began running node model.dbt_ods_delta.ad_mod_schaden
+2021-11-25 14:03:43.406337 (Thread-1): 15:03:43 | 2 of 8 START table model INM_DATASHARING.ad_mod_schaden.............. [RUN]
+2021-11-25 14:03:43.408340 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_schaden".
+2021-11-25 14:03:43.408340 (Thread-1): Compiling model.dbt_ods_delta.ad_mod_schaden
+2021-11-25 14:03:43.431351 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.ad_mod_schaden"
+2021-11-25 14:03:43.432367 (Thread-1): finished collecting timing info
+2021-11-25 14:03:43.435341 (Thread-1): Writing runtime SQL for node "model.dbt_ods_delta.ad_mod_schaden"
+2021-11-25 14:03:43.441349 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_schaden".
+2021-11-25 14:03:43.442353 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden: BEGIN
+2021-11-25 14:03:43.442353 (Thread-1): Opening a new connection, currently in state closed
+2021-11-25 14:03:44.014391 (Thread-1): SQL status: SUCCESS 1 in 0.57 seconds
+2021-11-25 14:03:44.014391 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_schaden".
+2021-11-25 14:03:44.015379 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_ods_delta.ad_mod_schaden"} */
+
+
+      create or replace transient table DWHHD_DEV.INM_DATASHARING.ad_mod_schaden  as
+      (
+
+with  __dbt__CTE__vg_schaden_akt as (
+select *
+from DWHHD_DEV.da.vg_schaden_akt
+),  __dbt__CTE__vg_schadenereignis_akt as (
+select *
+from DWHHD_DEV.da.vg_schadenereignis_akt
+),  __dbt__CTE__vg_schadenereignis_bez_akt as (
+select *
+from DWHHD_DEV.da.vg_schadenereignis_bez_akt
+),  __dbt__CTE__vg_schadenkategorie_akt as (
+select *
+from DWHHD_DEV.da.vg_schadenkategorie_akt
+),  __dbt__CTE__vg_schadenzahlung_akt as (
+select *
+from DWHHD_DEV.da.vg_schadenzahlung_akt
+),  __dbt__CTE__vg_schadenrolle_akt as (
+select *
+from DWHHD_DEV.da.vg_schadenrolle_akt
+),  __dbt__CTE__vg_schaden_art_akt as (
+select *
+from DWHHD_DEV.da.vg_schaden_art_akt
+),source_data as (
+
+SELECT DISTINCT DWH_SCHADEN_ID  FROM (
+SELECT DWH_SCHADEN_ID  FROM __dbt__CTE__vg_schaden_akt  
+UNION ALL
+SELECT DWH_EREIGNIS_ID AS DWH_SCHADEN_ID FROM __dbt__CTE__vg_schadenereignis_akt 
+UNION ALL 
+SELECT DWH_SCHADEN_ID FROM __dbt__CTE__vg_schadenereignis_bez_akt 
+UNION ALL 
+SELECT DWH_SCHADEN_ID FROM __dbt__CTE__vg_schadenkategorie_akt 
+UNION ALL 
+SELECT DWH_SCHADEN_ID FROM __dbt__CTE__vg_schadenzahlung_akt 
+UNION ALL
+SELECT ID AS DWH_SCHADEN_ID FROM __dbt__CTE__vg_schadenrolle_akt  
+UNION ALL 
+SELECT DWH_SCHADEN_ID AS DWH_SCHADEN_ID FROM __dbt__CTE__vg_schaden_art_akt   
+)
+ORDER BY 1
+
+					)
+
+select *
+from source_data
+      );
+2021-11-25 14:03:46.363734 (Thread-1): SQL status: SUCCESS 1 in 2.35 seconds
+2021-11-25 14:03:46.365734 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden: COMMIT
+2021-11-25 14:03:46.365734 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_schaden".
+2021-11-25 14:03:46.365734 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden: COMMIT
+2021-11-25 14:03:46.501737 (Thread-1): SQL status: SUCCESS 1 in 0.14 seconds
+2021-11-25 14:03:46.502760 (Thread-1): finished collecting timing info
+2021-11-25 14:03:46.502760 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden: Close
+2021-11-25 14:03:46.632818 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '67c3f80a-bddb-451f-aa53-07096f353741', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A1FC92C08>]}
+2021-11-25 14:03:46.633807 (Thread-1): 15:03:46 | 2 of 8 OK created table model INM_DATASHARING.ad_mod_schaden......... [SUCCESS 1 in 3.22s]
+2021-11-25 14:03:46.633807 (Thread-1): Finished running node model.dbt_ods_delta.ad_mod_schaden
+2021-11-25 14:03:46.634801 (Thread-1): Began running node model.dbt_ods_delta.ad_mod_partner
+2021-11-25 14:03:46.634801 (Thread-1): 15:03:46 | 3 of 8 START table model INM_DATASHARING.ad_mod_partner.............. [RUN]
+2021-11-25 14:03:46.637807 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_partner".
+2021-11-25 14:03:46.638801 (Thread-1): Compiling model.dbt_ods_delta.ad_mod_partner
+2021-11-25 14:03:46.680801 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.ad_mod_partner"
+2021-11-25 14:03:46.681804 (Thread-1): finished collecting timing info
+2021-11-25 14:03:46.687803 (Thread-1): Writing runtime SQL for node "model.dbt_ods_delta.ad_mod_partner"
+2021-11-25 14:03:46.700809 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_partner".
+2021-11-25 14:03:46.700809 (Thread-1): On model.dbt_ods_delta.ad_mod_partner: BEGIN
+2021-11-25 14:03:46.701809 (Thread-1): Opening a new connection, currently in state closed
+2021-11-25 14:03:47.165730 (Thread-1): SQL status: SUCCESS 1 in 0.46 seconds
+2021-11-25 14:03:47.165730 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_partner".
+2021-11-25 14:03:47.165730 (Thread-1): On model.dbt_ods_delta.ad_mod_partner: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_ods_delta.ad_mod_partner"} */
+
+
+      create or replace transient table DWHHD_DEV.INM_DATASHARING.ad_mod_partner  as
+      ( 
+
+with  __dbt__CTE__vg_anschrift_akt as (
+select *
+from DWHHD_DEV.da.vg_anschrift_akt
+),  __dbt__CTE__vg_bankverbindung_akt as (
+select *
+from DWHHD_DEV.da.vg_bankverbindung_akt
+),  __dbt__CTE__vg_betriebswirtschaftdaten_akt as (
+select *
+from DWHHD_DEV.da.vg_betriebswirtschaftdaten_akt
+),  __dbt__CTE__vg_coc_auftrag_partner_akt as (
+select *
+from DWHHD_DEV.da.vg_coc_auftrag_partner_akt
+),  __dbt__CTE__vg_externereferenz_partner_akt as (
+select *
+from DWHHD_DEV.da.vg_externereferenz_partner_akt
+),  __dbt__CTE__vg_kommunikationskanal_akt as (
+select *
+from DWHHD_DEV.da.vg_kommunikationskanal_akt
+),  __dbt__CTE__vg_kostenstelle_akt as (
+select *
+from DWHHD_DEV.da.vg_kostenstelle_akt
+),  __dbt__CTE__vg_kostenstelle_zuordnung_akt as (
+select *
+from DWHHD_DEV.da.vg_kostenstelle_zuordnung_akt
+),  __dbt__CTE__vg_marketingmassnahme_akt as (
+select *
+from DWHHD_DEV.da.vg_marketingmassnahme_akt
+),  __dbt__CTE__vg_partner_akt as (
+select *
+from DWHHD_DEV.da.vg_partner_akt
+),  __dbt__CTE__vg_partner_kennzeichen_akt as (
+select *
+from DWHHD_DEV.da.vg_partner_kennzeichen_akt
+),  __dbt__CTE__vg_partnerbeziehung_akt as (
+select *
+from DWHHD_DEV.da.vg_partnerbeziehung_akt
+),  __dbt__CTE__vg_vermittlervereinbarung_akt as (
+select *
+from DWHHD_DEV.da.vg_vermittlervereinbarung_akt
+),  __dbt__CTE__vg_vermittlervertrag_akt as (
+select *
+from DWHHD_DEV.da.vg_vermittlervertrag_akt
+),  __dbt__CTE__vg_wirtschaftszweig_akt as (
+select *
+from DWHHD_DEV.da.vg_wirtschaftszweig_akt
+),source_data as (
+
+SELECT DISTINCT DWH_PARTNER_ID  FROM (
+SELECT DWH_PARTNER_ID  FROM __dbt__CTE__vg_anschrift_akt
+UNION ALL
+SELECT DWH_PARTNER_ID  FROM __dbt__CTE__vg_bankverbindung_akt
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_betriebswirtschaftdaten_akt
+UNION ALL 
+SELECT PARTNER_ID AS DWH_PARTNER_ID FROM __dbt__CTE__vg_coc_auftrag_partner_akt
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_externereferenz_partner_akt
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_kommunikationskanal_akt
+UNION ALL 
+SELECT DWH_KOSTENSTELLEN_ID AS DWH_PARTNER_ID FROM __dbt__CTE__vg_kostenstelle_akt
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_kostenstelle_zuordnung_akt WHERE TYP = 'KST-MA'
+UNION ALL 
+SELECT DWH_KOSTENSTELLEN_ID AS DWH_PARTNER_ID FROM __dbt__CTE__vg_kostenstelle_zuordnung_akt WHERE TYP = 'OE-KST'
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_marketingmassnahme_akt 
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_partner_akt
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_partner_kennzeichen_akt
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_partnerbeziehung_akt
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_vermittlervereinbarung_akt
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_vermittlervertrag_akt
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_wirtschaftszweig_akt
+)
+ORDER BY 1
+
+					)
+
+select *
+from source_data
+      );
+2021-11-25 14:03:50.382303 (Thread-1): SQL status: SUCCESS 1 in 3.22 seconds
+2021-11-25 14:03:50.386304 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_partner".
+2021-11-25 14:03:50.386304 (Thread-1): On model.dbt_ods_delta.ad_mod_partner: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_ods_delta.ad_mod_partner"} */
+
+        ALTER TABLE INM_DATASHARING.AD_MOD_PARTNER ADD CONSTRAINT AD_MOD_PARTNER_PK PRIMARY KEY (DWH_PARTNER_ID)
+2021-11-25 14:03:50.517307 (Thread-1): SQL status: SUCCESS 1 in 0.13 seconds
+2021-11-25 14:03:50.518307 (Thread-1): On model.dbt_ods_delta.ad_mod_partner: COMMIT
+2021-11-25 14:03:50.519312 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_partner".
+2021-11-25 14:03:50.519312 (Thread-1): On model.dbt_ods_delta.ad_mod_partner: COMMIT
+2021-11-25 14:03:50.594315 (Thread-1): SQL status: SUCCESS 1 in 0.08 seconds
+2021-11-25 14:03:50.595313 (Thread-1): finished collecting timing info
+2021-11-25 14:03:50.595313 (Thread-1): On model.dbt_ods_delta.ad_mod_partner: Close
+2021-11-25 14:03:50.722591 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '67c3f80a-bddb-451f-aa53-07096f353741', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A1FA91308>]}
+2021-11-25 14:03:50.723606 (Thread-1): 15:03:50 | 3 of 8 OK created table model INM_DATASHARING.ad_mod_partner......... [SUCCESS 1 in 4.08s]
+2021-11-25 14:03:50.723606 (Thread-1): Finished running node model.dbt_ods_delta.ad_mod_partner
+2021-11-25 14:03:50.724596 (Thread-1): Began running node model.dbt_ods_delta.ad_mod_vertrag
+2021-11-25 14:03:50.724596 (Thread-1): 15:03:50 | 4 of 8 START table model INM_DATASHARING.ad_mod_vertrag.............. [RUN]
+2021-11-25 14:03:50.726597 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_vertrag".
+2021-11-25 14:03:50.726597 (Thread-1): Compiling model.dbt_ods_delta.ad_mod_vertrag
+2021-11-25 14:03:50.781601 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.ad_mod_vertrag"
+2021-11-25 14:03:50.782598 (Thread-1): finished collecting timing info
+2021-11-25 14:03:50.786593 (Thread-1): Writing runtime SQL for node "model.dbt_ods_delta.ad_mod_vertrag"
+2021-11-25 14:03:50.804594 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_vertrag".
+2021-11-25 14:03:50.804594 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag: BEGIN
+2021-11-25 14:03:50.805592 (Thread-1): Opening a new connection, currently in state closed
+2021-11-25 14:03:51.167022 (Thread-1): SQL status: SUCCESS 1 in 0.36 seconds
+2021-11-25 14:03:51.167022 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_vertrag".
+2021-11-25 14:03:51.167022 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_ods_delta.ad_mod_vertrag"} */
+
+
+      create or replace transient table DWHHD_DEV.INM_DATASHARING.ad_mod_vertrag  as
+      (
+
+with  __dbt__CTE__vg_coc_auftrag_vertrag_akt as (
+select *
+from DWHHD_DEV.da.vg_coc_auftrag_vertrag_akt
+),  __dbt__CTE__vg_externereferenz_akt as (
+select *
+from DWHHD_DEV.da.vg_externereferenz_akt
+),  __dbt__CTE__vg_internereferenz_akt as (
+select *
+from DWHHD_DEV.da.vg_internereferenz_akt
+),  __dbt__CTE__vg_lv_bezugsrecht_akt as (
+select *
+from DWHHD_DEV.da.vg_lv_bezugsrecht_akt
+),  __dbt__CTE__vg_lv_leistung_akt as (
+select *
+from DWHHD_DEV.da.vg_lv_leistung_akt
+),  __dbt__CTE__vg_mahnung_akt as (
+select *
+from DWHHD_DEV.da.vg_mahnung_akt
+),  __dbt__CTE__vg_rolle_akt as (
+select *
+from DWHHD_DEV.da.vg_rolle_akt
+),  __dbt__CTE__vg_vertrag_akt as (
+select *
+from DWHHD_DEV.da.vg_vertrag_akt
+),  __dbt__CTE__vg_vertragsbeziehung_akt as (
+select *
+from DWHHD_DEV.da.vg_vertragsbeziehung_akt
+),  __dbt__CTE__vg_vertragskontext_akt as (
+select *
+from DWHHD_DEV.da.vg_vertragskontext_akt
+),  __dbt__CTE__vg_beitrag_akt as (
+select *
+from DWHHD_DEV.da.vg_beitrag_akt
+),  __dbt__CTE__vg_bonusmalus_akt as (
+select *
+from DWHHD_DEV.da.vg_bonusmalus_akt
+),  __dbt__CTE__vg_deckung_akt as (
+select *
+from DWHHD_DEV.da.vg_deckung_akt
+),  __dbt__CTE__vg_drittrechtglaeubiger_akt as (
+select *
+from DWHHD_DEV.da.vg_drittrechtglaeubiger_akt
+),  __dbt__CTE__vg_fremdvertrag_akt as (
+select *
+from DWHHD_DEV.da.vg_fremdvertrag_akt
+),  __dbt__CTE__vg_kfzspezifischemerkmale_akt as (
+select *
+from DWHHD_DEV.da.vg_kfzspezifischemerkmale_akt
+),  __dbt__CTE__vg_klauselnbedingungen_akt as (
+select *
+from DWHHD_DEV.da.vg_klauselnbedingungen_akt
+),  __dbt__CTE__vg_kraftfahrzeug_akt as (
+select *
+from DWHHD_DEV.da.vg_kraftfahrzeug_akt
+),  __dbt__CTE__vg_lv_leistung_flv_akt as (
+select *
+from DWHHD_DEV.da.vg_lv_leistung_flv_akt
+),  __dbt__CTE__vg_lv_leistung_konv_akt as (
+select *
+from DWHHD_DEV.da.vg_lv_leistung_konv_akt
+),  __dbt__CTE__vg_nutzer_akt as (
+select *
+from DWHHD_DEV.da.vg_nutzer_akt
+),  __dbt__CTE__vg_selbstbehalte_akt as (
+select *
+from DWHHD_DEV.da.vg_selbstbehalte_akt
+),  __dbt__CTE__vg_stufung_akt as (
+select *
+from DWHHD_DEV.da.vg_stufung_akt
+),  __dbt__CTE__vg_typregio_akt as (
+select *
+from DWHHD_DEV.da.vg_typregio_akt
+),  __dbt__CTE__vg_versichertesobjekt_akt as (
+select *
+from DWHHD_DEV.da.vg_versichertesobjekt_akt
+),  __dbt__CTE__vg_versichertesobjektkfz_akt as (
+select *
+from DWHHD_DEV.da.vg_versichertesobjektkfz_akt
+),  __dbt__CTE__vg_vertragstandard_akt as (
+select *
+from DWHHD_DEV.da.vg_vertragstandard_akt
+),  __dbt__CTE__vg_vertragsteil_akt as (
+select *
+from DWHHD_DEV.da.vg_vertragsteil_akt
+),  __dbt__CTE__vg_vertragsteilbuendel_akt as (
+select *
+from DWHHD_DEV.da.vg_vertragsteilbuendel_akt
+),  __dbt__CTE__vg_zuschl_nachl_akt as (
+select *
+from DWHHD_DEV.da.vg_zuschl_nachl_akt
+),  __dbt__CTE__vg_wertungsgrundlteilung_akt as (
+select *
+from DWHHD_DEV.da.vg_wertungsgrundlteilung_akt
+),source_data as (
+
+
+select distinct tik_vertrag  from (
+select tik_vertrag from __dbt__CTE__vg_coc_auftrag_vertrag_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_externereferenz_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_internereferenz_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_lv_bezugsrecht_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_lv_leistung_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_mahnung_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_rolle_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_vertrag_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_vertragsbeziehung_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_vertragskontext_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_beitrag_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_bonusmalus_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_deckung_akt
+union all
+select tik_police as tik_vertrag from __dbt__CTE__vg_drittrechtglaeubiger_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_fremdvertrag_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_kfzspezifischemerkmale_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_klauselnbedingungen_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_kraftfahrzeug_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_lv_leistung_flv_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_lv_leistung_konv_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_nutzer_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_selbstbehalte_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_stufung_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_typregio_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_versichertesobjekt_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_versichertesobjektkfz_akt 
+union all
+select tik_police as tik_vertrag from __dbt__CTE__vg_vertragstandard_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_vertragsteil_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_vertragsteilbuendel_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_zuschl_nachl_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_wertungsgrundlteilung_akt
+) 
+ORDER BY 1
+
+					)
+
+select *
+from source_data
+      );
+2021-11-25 14:03:57.507987 (Thread-1): SQL status: SUCCESS 1 in 6.34 seconds
+2021-11-25 14:03:57.508991 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag: COMMIT
+2021-11-25 14:03:57.509987 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_vertrag".
+2021-11-25 14:03:57.509987 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag: COMMIT
+2021-11-25 14:03:57.582266 (Thread-1): SQL status: SUCCESS 1 in 0.07 seconds
+2021-11-25 14:03:57.583267 (Thread-1): finished collecting timing info
+2021-11-25 14:03:57.584259 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag: Close
+2021-11-25 14:03:57.704630 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '67c3f80a-bddb-451f-aa53-07096f353741', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A1FD1A608>]}
+2021-11-25 14:03:57.704630 (Thread-1): 15:03:57 | 4 of 8 OK created table model INM_DATASHARING.ad_mod_vertrag......... [SUCCESS 1 in 6.98s]
+2021-11-25 14:03:57.705621 (Thread-1): Finished running node model.dbt_ods_delta.ad_mod_vertrag
+2021-11-25 14:03:57.705621 (Thread-1): Began running node model.dbt_ods_delta.ad_chng_vertrag_status
+2021-11-25 14:03:57.706610 (Thread-1): 15:03:57 | 5 of 8 START table model INM_DATASHARING.ad_chng_vertrag_status...... [RUN]
+2021-11-25 14:03:57.708631 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.ad_chng_vertrag_status".
+2021-11-25 14:03:57.708631 (Thread-1): Compiling model.dbt_ods_delta.ad_chng_vertrag_status
+2021-11-25 14:03:57.749621 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.ad_chng_vertrag_status"
+2021-11-25 14:03:57.751633 (Thread-1): finished collecting timing info
+2021-11-25 14:03:57.754619 (Thread-1): Writing runtime SQL for node "model.dbt_ods_delta.ad_chng_vertrag_status"
+2021-11-25 14:03:57.761618 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_chng_vertrag_status".
+2021-11-25 14:03:57.761618 (Thread-1): On model.dbt_ods_delta.ad_chng_vertrag_status: BEGIN
+2021-11-25 14:03:57.762617 (Thread-1): Opening a new connection, currently in state closed
+2021-11-25 14:03:58.177707 (Thread-1): SQL status: SUCCESS 1 in 0.42 seconds
+2021-11-25 14:03:58.177707 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_chng_vertrag_status".
+2021-11-25 14:03:58.177707 (Thread-1): On model.dbt_ods_delta.ad_chng_vertrag_status: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_ods_delta.ad_chng_vertrag_status"} */
+
+
+      create or replace transient table DWHHD_DEV.INM_DATASHARING.ad_chng_vertrag_status  as
+      (
+
+with  __dbt__CTE__od_vertrag_akt as (
+select *
+from DWHHD_DEV.da.od_vertrag_akt
+),  __dbt__CTE__od_vertragskontext_akt as (
+select *
+from DWHHD_DEV.da.od_vertragskontext_akt
+),  __dbt__CTE__vs_vertrag as (
+select *
+from DWHHD_DEV.da.vs_vertrag
+),source_data as (
+
+SELECT
+	TIK_POLICE,
+	TIK_VERTRAG,
+	DWH_POLICE_ID,
+	DWH_VERTRAG_ID,
+	VERTRAGSTDOB,
+	VERTRAGSOB,
+	STATUSVERTRAG,
+	ISTSTORNIERTIND,
+	STORNOGRUND,
+	STATUS,
+	314 AS ODS_LAUF_ID,
+	CURRENT_TIMESTAMP AS T_AEND_DAT
+FROM
+	(
+	SELECT
+		ROW_NUMBER() OVER (PARTITION BY vert.DWH_VERTRAG_ID,
+		vert.VERTRAGSTDOB
+	ORDER BY
+		vertStornogrund.BIZPRCNR DESC) SORTER,
+		vert.TIK_POLICE,
+		vert.TIK_VERTRAG,
+		vert.DWH_POLICE_ID,
+		vert.DWH_VERTRAG_ID,
+		vert.VERTRAGSTDOB,
+		vert.VERTRAGSOB,
+		vert.STATUSVERTRAG,
+		vert.ISTSTORNIERTIND,
+		vv.STATUS,
+		vertStornogrund.STORNOGRUND
+	FROM
+		__dbt__CTE__od_vertrag_akt vert
+	INNER JOIN __dbt__CTE__od_vertragskontext_akt vv
+        ON
+		vert.TIK_VERTRAG = vv.TIK_VERTRAG
+		AND CURRENT_TIMESTAMP < vv.UNGUELTIGAB
+		AND CURRENT_TIMESTAMP >= vv.GUELTIGVON
+		AND vv.STATUS = 'STOR'
+		AND vv.STATUSDATUM < CURRENT_TIMESTAMP
+	INNER JOIN __dbt__CTE__vs_vertrag vertStornogrund
+        ON
+		vert.DWH_VERTRAG_ID = vertStornogrund.DWH_VERTRAG_ID
+		AND vertStornogrund.BIZPRCNR < vert.BIZPRCNR
+		AND vertStornogrund.ISTSTORNIERTIND = 1
+	WHERE
+		vert.ISTSTORNIERTIND = 0
+)
+WHERE
+	SORTER = 1
+	AND TIK_POLICE IS NOT NULL
+	AND TIK_VERTRAG IS NOT NULL
+
+					)
+
+select *
+from source_data
+      );
+2021-11-25 14:04:04.693022 (Thread-1): SQL status: SUCCESS 1 in 6.52 seconds
+2021-11-25 14:04:04.694874 (Thread-1): On model.dbt_ods_delta.ad_chng_vertrag_status: COMMIT
+2021-11-25 14:04:04.695874 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_chng_vertrag_status".
+2021-11-25 14:04:04.695874 (Thread-1): On model.dbt_ods_delta.ad_chng_vertrag_status: COMMIT
+2021-11-25 14:04:05.017918 (Thread-1): SQL status: SUCCESS 1 in 0.32 seconds
+2021-11-25 14:04:05.019860 (Thread-1): finished collecting timing info
+2021-11-25 14:04:05.020859 (Thread-1): On model.dbt_ods_delta.ad_chng_vertrag_status: Close
+2021-11-25 14:04:05.175864 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '67c3f80a-bddb-451f-aa53-07096f353741', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A1FD0FD08>]}
+2021-11-25 14:04:05.176861 (Thread-1): 15:04:05 | 5 of 8 OK created table model INM_DATASHARING.ad_chng_vertrag_status. [SUCCESS 1 in 7.47s]
+2021-11-25 14:04:05.176861 (Thread-1): Finished running node model.dbt_ods_delta.ad_chng_vertrag_status
+2021-11-25 14:04:05.177856 (Thread-1): Began running node model.dbt_ods_delta.ad_mod_schaden_coc
+2021-11-25 14:04:05.177856 (Thread-1): 15:04:05 | 6 of 8 START table model INM_DATASHARING.ad_mod_schaden_coc.......... [RUN]
+2021-11-25 14:04:05.180864 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_schaden_coc".
+2021-11-25 14:04:05.180864 (Thread-1): Compiling model.dbt_ods_delta.ad_mod_schaden_coc
+2021-11-25 14:04:05.198863 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.ad_mod_schaden_coc"
+2021-11-25 14:04:05.200874 (Thread-1): finished collecting timing info
+2021-11-25 14:04:05.203872 (Thread-1): Writing runtime SQL for node "model.dbt_ods_delta.ad_mod_schaden_coc"
+2021-11-25 14:04:05.207857 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_schaden_coc".
+2021-11-25 14:04:05.207857 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden_coc: BEGIN
+2021-11-25 14:04:05.208856 (Thread-1): Opening a new connection, currently in state closed
+2021-11-25 14:04:05.705876 (Thread-1): SQL status: SUCCESS 1 in 0.50 seconds
+2021-11-25 14:04:05.706876 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_schaden_coc".
+2021-11-25 14:04:05.706876 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden_coc: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_ods_delta.ad_mod_schaden_coc"} */
+
+
+      create or replace transient table DWHHD_DEV.INM_DATASHARING.ad_mod_schaden_coc  as
+      (
+
+with  __dbt__CTE__od_schaden_akt as (
+select *
+from DWHHD_DEV.da.od_schaden_akt
+),  __dbt__CTE__od_coc_auftrag_vertrag_akt as (
+select *
+from DWHHD_DEV.da.od_coc_auftrag_vertrag_akt
+),source_data as (
+
+SELECT
+	ad.DWH_SCHADEN_ID
+FROM
+	DWHHD_DEV.INM_DATASHARING.ad_mod_schaden ad
+INNER JOIN __dbt__CTE__od_schaden_akt s
+ON
+	ad.DWH_SCHADEN_ID = s.DWH_SCHADEN_ID
+WHERE
+	s.TIK_VERTRAG NOT IN
+  (
+	SELECT
+		TIK_VERTRAG
+	FROM
+		__dbt__CTE__od_coc_auftrag_vertrag_akt 
+	WHERE
+		DT_COC_SPERRE <= current_timestamp
+		OR AENDERUNGS_KZ = 'L'
+  )
+GROUP BY
+	ad.DWH_SCHADEN_ID
+ORDER BY
+	1
+
+					)
+
+select *
+from source_data
+      );
+2021-11-25 14:04:07.897920 (Thread-1): SQL status: SUCCESS 1 in 2.19 seconds
+2021-11-25 14:04:07.899918 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden_coc: COMMIT
+2021-11-25 14:04:07.899918 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_schaden_coc".
+2021-11-25 14:04:07.899918 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden_coc: COMMIT
+2021-11-25 14:04:07.991920 (Thread-1): SQL status: SUCCESS 1 in 0.09 seconds
+2021-11-25 14:04:07.992920 (Thread-1): finished collecting timing info
+2021-11-25 14:04:07.993919 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden_coc: Close
+2021-11-25 14:04:08.238931 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '67c3f80a-bddb-451f-aa53-07096f353741', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A1FD36D88>]}
+2021-11-25 14:04:08.239926 (Thread-1): 15:04:08 | 6 of 8 OK created table model INM_DATASHARING.ad_mod_schaden_coc..... [SUCCESS 1 in 3.06s]
+2021-11-25 14:04:08.240925 (Thread-1): Finished running node model.dbt_ods_delta.ad_mod_schaden_coc
+2021-11-25 14:04:08.240925 (Thread-1): Began running node model.dbt_ods_delta.ad_mod_partner_coc
+2021-11-25 14:04:08.241954 (Thread-1): 15:04:08 | 7 of 8 START table model INM_DATASHARING.ad_mod_partner_coc.......... [RUN]
+2021-11-25 14:04:08.244930 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_partner_coc".
+2021-11-25 14:04:08.244930 (Thread-1): Compiling model.dbt_ods_delta.ad_mod_partner_coc
+2021-11-25 14:04:08.258927 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.ad_mod_partner_coc"
+2021-11-25 14:04:08.259930 (Thread-1): finished collecting timing info
+2021-11-25 14:04:08.263923 (Thread-1): Writing runtime SQL for node "model.dbt_ods_delta.ad_mod_partner_coc"
+2021-11-25 14:04:08.267927 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_partner_coc".
+2021-11-25 14:04:08.268927 (Thread-1): On model.dbt_ods_delta.ad_mod_partner_coc: BEGIN
+2021-11-25 14:04:08.268927 (Thread-1): Opening a new connection, currently in state closed
+2021-11-25 14:04:08.803938 (Thread-1): SQL status: SUCCESS 1 in 0.54 seconds
+2021-11-25 14:04:08.803938 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_partner_coc".
+2021-11-25 14:04:08.803938 (Thread-1): On model.dbt_ods_delta.ad_mod_partner_coc: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_ods_delta.ad_mod_partner_coc"} */
+
+
+      create or replace transient table DWHHD_DEV.INM_DATASHARING.ad_mod_partner_coc  as
+      (
+
+with  __dbt__CTE__od_coc_auftrag_partner_akt as (
+select *
+from DWHHD_DEV.da.od_coc_auftrag_partner_akt
+),source_data as (
+
+SELECT
+	DWH_PARTNER_ID
+FROM
+	DWHHD_DEV.INM_DATASHARING.ad_mod_partner 
+WHERE
+DWH_PARTNER_ID NOT IN
+     (
+SELECT
+	TIK_PARTNER
+FROM
+	__dbt__CTE__od_coc_auftrag_partner_akt
+WHERE
+	DT_COC_SPERRE <= CURRENT_TIMESTAMP
+	OR AENDERUNGS_KZ = 'L'
+    )
+
+					)
+
+select *
+from source_data
+      );
+2021-11-25 14:04:10.671982 (Thread-1): SQL status: SUCCESS 1 in 1.87 seconds
+2021-11-25 14:04:10.675978 (Thread-1): On model.dbt_ods_delta.ad_mod_partner_coc: COMMIT
+2021-11-25 14:04:10.675978 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_partner_coc".
+2021-11-25 14:04:10.676976 (Thread-1): On model.dbt_ods_delta.ad_mod_partner_coc: COMMIT
+2021-11-25 14:04:10.771981 (Thread-1): SQL status: SUCCESS 1 in 0.10 seconds
+2021-11-25 14:04:10.772981 (Thread-1): finished collecting timing info
+2021-11-25 14:04:10.773981 (Thread-1): On model.dbt_ods_delta.ad_mod_partner_coc: Close
+2021-11-25 14:04:10.954983 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '67c3f80a-bddb-451f-aa53-07096f353741', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A1FC78948>]}
+2021-11-25 14:04:10.954983 (Thread-1): 15:04:10 | 7 of 8 OK created table model INM_DATASHARING.ad_mod_partner_coc..... [SUCCESS 1 in 2.71s]
+2021-11-25 14:04:10.957984 (Thread-1): Finished running node model.dbt_ods_delta.ad_mod_partner_coc
+2021-11-25 14:04:10.957984 (Thread-1): Began running node model.dbt_ods_delta.ad_mod_vertrag_coc
+2021-11-25 14:04:10.957984 (Thread-1): 15:04:10 | 8 of 8 START table model INM_DATASHARING.ad_mod_vertrag_coc.......... [RUN]
+2021-11-25 14:04:10.961988 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_vertrag_coc".
+2021-11-25 14:04:10.961988 (Thread-1): Compiling model.dbt_ods_delta.ad_mod_vertrag_coc
+2021-11-25 14:04:10.977986 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.ad_mod_vertrag_coc"
+2021-11-25 14:04:10.978989 (Thread-1): finished collecting timing info
+2021-11-25 14:04:10.982982 (Thread-1): Writing runtime SQL for node "model.dbt_ods_delta.ad_mod_vertrag_coc"
+2021-11-25 14:04:10.985984 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_vertrag_coc".
+2021-11-25 14:04:10.985984 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag_coc: BEGIN
+2021-11-25 14:04:10.985984 (Thread-1): Opening a new connection, currently in state closed
+2021-11-25 14:04:11.500997 (Thread-1): SQL status: SUCCESS 1 in 0.52 seconds
+2021-11-25 14:04:11.501996 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_vertrag_coc".
+2021-11-25 14:04:11.501996 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag_coc: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_ods_delta.ad_mod_vertrag_coc"} */
+
+
+      create or replace transient table DWHHD_DEV.INM_DATASHARING.ad_mod_vertrag_coc  as
+      (
+
+with  __dbt__CTE__od_coc_auftrag_vertrag_akt as (
+select *
+from DWHHD_DEV.da.od_coc_auftrag_vertrag_akt
+),source_data as (
+
+SELECT
+	TIK_VERTRAG
+FROM
+	DWHHD_DEV.INM_DATASHARING.ad_mod_vertrag 
+WHERE
+	TIK_VERTRAG NOT IN
+     (
+	SELECT
+		TIK_VERTRAG
+	FROM
+		__dbt__CTE__od_coc_auftrag_vertrag_akt
+	WHERE
+		DT_COC_SPERRE <= current_timestamp
+		OR AENDERUNGS_KZ = 'L'
+    )
+
+	)
+
+select *
+from source_data
+      );
+2021-11-25 14:04:14.187222 (Thread-1): SQL status: SUCCESS 1 in 2.69 seconds
+2021-11-25 14:04:14.189230 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag_coc: COMMIT
+2021-11-25 14:04:14.190221 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_vertrag_coc".
+2021-11-25 14:04:14.190221 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag_coc: COMMIT
+2021-11-25 14:04:14.618230 (Thread-1): SQL status: SUCCESS 1 in 0.43 seconds
+2021-11-25 14:04:14.619231 (Thread-1): finished collecting timing info
+2021-11-25 14:04:14.619231 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag_coc: Close
+2021-11-25 14:04:14.750242 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '67c3f80a-bddb-451f-aa53-07096f353741', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A1F8FAC88>]}
+2021-11-25 14:04:14.751246 (Thread-1): 15:04:14 | 8 of 8 OK created table model INM_DATASHARING.ad_mod_vertrag_coc..... [SUCCESS 1 in 3.79s]
+2021-11-25 14:04:14.752241 (Thread-1): Finished running node model.dbt_ods_delta.ad_mod_vertrag_coc
+2021-11-25 14:04:14.833234 (MainThread): Acquiring new snowflake connection "master".
+2021-11-25 14:04:14.833234 (MainThread): Using snowflake connection "master".
+2021-11-25 14:04:14.834242 (MainThread): On master: BEGIN
+2021-11-25 14:04:14.834242 (MainThread): Opening a new connection, currently in state closed
+2021-11-25 14:04:15.332248 (MainThread): SQL status: SUCCESS 1 in 0.50 seconds
+2021-11-25 14:04:15.332248 (MainThread): On master: COMMIT
+2021-11-25 14:04:15.332248 (MainThread): Using snowflake connection "master".
+2021-11-25 14:04:15.333249 (MainThread): On master: COMMIT
+2021-11-25 14:04:15.804206 (MainThread): SQL status: SUCCESS 1 in 0.47 seconds
+2021-11-25 14:04:15.804206 (MainThread): On master: Close
+2021-11-25 14:04:15.974940 (MainThread): 15:04:15 | 
+2021-11-25 14:04:15.975884 (MainThread): 15:04:15 | Finished running 8 table models in 44.26s.
+2021-11-25 14:04:15.977889 (MainThread): Connection 'master' was properly closed.
+2021-11-25 14:04:15.978887 (MainThread): Connection 'list_DWHHD_DEV' was properly closed.
+2021-11-25 14:04:15.978887 (MainThread): Connection 'list_DWHHD_DEV_INM_DATASHARING' was properly closed.
+2021-11-25 14:04:15.978887 (MainThread): Connection 'model.dbt_ods_delta.ad_mod_vertrag_coc' was properly closed.
+2021-11-25 14:04:16.003885 (MainThread): 
+2021-11-25 14:04:16.004893 (MainThread): Completed successfully
+2021-11-25 14:04:16.006887 (MainThread): 
+Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+2021-11-25 14:04:16.007887 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A1CBC0F88>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A1ED15A88>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A1FC71A88>]}
+2021-11-25 14:04:16.007887 (MainThread): Flushing usage events
+2021-11-25 14:04:16.055888 (MainThread): The 'warn' method is deprecated, use 'warning' instead
+2021-11-25 14:04:16.056892 (MainThread): Error sending message, disabling tracking
+2021-11-25 14:59:38.761813 (MainThread): Running with dbt=0.19.1
+2021-11-25 14:59:40.409032 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='C:\\Users\\059603\\.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-11-25 14:59:40.409848 (MainThread): Tracking: tracking
+2021-11-25 14:59:40.410846 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F6E14C308>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F6E14C4C8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F6E14B248>]}
+2021-11-25 14:59:40.434871 (MainThread): Partial parsing not enabled
+2021-11-25 14:59:40.436860 (MainThread): Parsing macros\generate_schema_name.sql
+2021-11-25 14:59:40.441850 (MainThread): Parsing macros\adapters.sql
+2021-11-25 14:59:40.523864 (MainThread): Parsing macros\catalog.sql
+2021-11-25 14:59:40.529850 (MainThread): Parsing macros\materializations\incremental.sql
+2021-11-25 14:59:40.558882 (MainThread): Parsing macros\materializations\merge.sql
+2021-11-25 14:59:40.563852 (MainThread): Parsing macros\materializations\table.sql
+2021-11-25 14:59:40.579852 (MainThread): Parsing macros\materializations\view.sql
+2021-11-25 14:59:40.591850 (MainThread): Parsing macros\core.sql
+2021-11-25 14:59:40.601852 (MainThread): Parsing macros\adapters\common.sql
+2021-11-25 14:59:40.712855 (MainThread): Parsing macros\etc\datetime.sql
+2021-11-25 14:59:40.736440 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2021-11-25 14:59:40.738445 (MainThread): Parsing macros\etc\get_custom_database.sql
+2021-11-25 14:59:40.744425 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2021-11-25 14:59:40.753422 (MainThread): Parsing macros\etc\is_incremental.sql
+2021-11-25 14:59:40.757425 (MainThread): Parsing macros\etc\query.sql
+2021-11-25 14:59:40.761423 (MainThread): Parsing macros\materializations\helpers.sql
+2021-11-25 14:59:40.782420 (MainThread): Parsing macros\materializations\common\merge.sql
+2021-11-25 14:59:40.816989 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2021-11-25 14:59:40.821981 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2021-11-25 14:59:40.834990 (MainThread): Parsing macros\materializations\seed\seed.sql
+2021-11-25 14:59:40.888984 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2021-11-25 14:59:40.976982 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2021-11-25 14:59:40.981979 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2021-11-25 14:59:41.025980 (MainThread): Parsing macros\materializations\table\table.sql
+2021-11-25 14:59:41.041989 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2021-11-25 14:59:41.053978 (MainThread): Parsing macros\materializations\view\view.sql
+2021-11-25 14:59:41.069985 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2021-11-25 14:59:41.075984 (MainThread): Parsing macros\schema_tests\not_null.sql
+2021-11-25 14:59:41.079981 (MainThread): Parsing macros\schema_tests\relationships.sql
+2021-11-25 14:59:41.084988 (MainThread): Parsing macros\schema_tests\unique.sql
+2021-11-25 14:59:41.104992 (MainThread): Partial parsing not enabled
+2021-11-25 14:59:41.181985 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.ad_chng_vertrag_status".
+2021-11-25 14:59:41.225989 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_partner".
+2021-11-25 14:59:41.255992 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_partner_coc".
+2021-11-25 14:59:41.357987 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_schaden".
+2021-11-25 14:59:41.373985 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_schaden_coc".
+2021-11-25 14:59:41.387998 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_vertrag".
+2021-11-25 14:59:41.421992 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_vertrag_coc".
+2021-11-25 14:59:41.433988 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.filter_vertrag_crm".
+2021-11-25 14:59:41.445001 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.od_coc_auftrag_partner_akt".
+2021-11-25 14:59:41.456011 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.od_coc_auftrag_vertrag_akt".
+2021-11-25 14:59:41.464992 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.od_schaden_akt".
+2021-11-25 14:59:41.474005 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.od_vertragskontext_akt".
+2021-11-25 14:59:41.484994 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.od_vertrag_akt".
+2021-11-25 14:59:41.495033 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_anschrift_akt".
+2021-11-25 14:59:41.503992 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_bankverbindung_akt".
+2021-11-25 14:59:41.515990 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_beitrag_akt".
+2021-11-25 14:59:41.526003 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_betriebswirtschaftdaten_akt".
+2021-11-25 14:59:41.538991 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_bonusmalus_akt".
+2021-11-25 14:59:41.547005 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_coc_auftrag_partner_akt".
+2021-11-25 14:59:41.563994 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_coc_auftrag_vertrag_akt".
+2021-11-25 14:59:41.574995 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_deckung_akt".
+2021-11-25 14:59:41.584990 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_drittrechtglaeubiger_akt".
+2021-11-25 14:59:41.596991 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_externereferenz_akt".
+2021-11-25 14:59:41.607992 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_externereferenz_partner_akt".
+2021-11-25 14:59:41.618991 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_fremdvertrag_akt".
+2021-11-25 14:59:41.628997 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_internereferenz_akt".
+2021-11-25 14:59:41.639998 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kfzspezifischemerkmale_akt".
+2021-11-25 14:59:41.653004 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_klauselnbedingungen_akt".
+2021-11-25 14:59:41.666003 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kommunikationskanal_akt".
+2021-11-25 14:59:41.677996 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kostenstelle_akt".
+2021-11-25 14:59:41.689992 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kostenstelle_zuordnung_akt".
+2021-11-25 14:59:41.702996 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kraftfahrzeug_akt".
+2021-11-25 14:59:41.714999 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_lv_bezugsrecht_akt".
+2021-11-25 14:59:41.725993 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_lv_leistung_akt".
+2021-11-25 14:59:41.737008 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_lv_leistung_flv_akt".
+2021-11-25 14:59:41.749013 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_lv_leistung_konv_akt".
+2021-11-25 14:59:41.762002 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_mahnung_akt".
+2021-11-25 14:59:41.772012 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_marketingmassnahme_akt".
+2021-11-25 14:59:41.782994 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_nutzer_akt".
+2021-11-25 14:59:41.793020 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_partnerbeziehung_akt".
+2021-11-25 14:59:41.806012 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_partner_akt".
+2021-11-25 14:59:41.820994 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_partner_kennzeichen_akt".
+2021-11-25 14:59:41.831993 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_rolle_akt".
+2021-11-25 14:59:41.843002 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenereignis_akt".
+2021-11-25 14:59:41.856998 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenereignis_bez_akt".
+2021-11-25 14:59:41.870005 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenkategorie_akt".
+2021-11-25 14:59:41.891021 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenrolle_akt".
+2021-11-25 14:59:41.906000 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenzahlung_akt".
+2021-11-25 14:59:41.920003 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schaden_akt".
+2021-11-25 14:59:41.933001 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schaden_art_akt".
+2021-11-25 14:59:41.945014 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_selbstbehalte_akt".
+2021-11-25 14:59:41.955997 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_stufung_akt".
+2021-11-25 14:59:41.967001 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_typregio_akt".
+2021-11-25 14:59:41.976003 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vermittlervereinbarung_akt".
+2021-11-25 14:59:41.986995 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vermittlervertrag_akt".
+2021-11-25 14:59:42.005001 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_versichertesobjektkfz_akt".
+2021-11-25 14:59:42.017008 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_versichertesobjekt_akt".
+2021-11-25 14:59:42.032004 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragsbeziehung_akt".
+2021-11-25 14:59:42.041999 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragskontext_akt".
+2021-11-25 14:59:42.052999 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragstandard_akt".
+2021-11-25 14:59:42.063999 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragsteilbuendel_akt".
+2021-11-25 14:59:42.078997 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragsteil_akt".
+2021-11-25 14:59:42.092999 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertrag_akt".
+2021-11-25 14:59:42.103001 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_wertungsgrundlteilung_akt".
+2021-11-25 14:59:42.113025 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_wirtschaftszweig_akt".
+2021-11-25 14:59:42.126001 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vg_zuschl_nachl_akt".
+2021-11-25 14:59:42.148003 (MainThread): Acquiring new snowflake connection "model.dbt_ods_delta.vs_vertrag".
+2021-11-25 14:59:42.521012 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '40ca1112-0499-4c83-8d65-c82bb16136ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F6D7898C8>]}
+2021-11-25 14:59:42.572013 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '40ca1112-0499-4c83-8d65-c82bb16136ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F6E3C44C8>]}
+2021-11-25 14:59:42.572013 (MainThread): Found 67 models, 0 tests, 0 snapshots, 0 analyses, 144 macros, 0 operations, 0 seed files, 59 sources, 0 exposures
+2021-11-25 14:59:42.594012 (MainThread): 
+2021-11-25 14:59:42.598019 (MainThread): Acquiring new snowflake connection "master".
+2021-11-25 14:59:42.603016 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DWHHD_DEV".
+2021-11-25 14:59:42.656027 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DWHHD_DEV".
+2021-11-25 14:59:42.657019 (ThreadPoolExecutor-0_0): On list_DWHHD_DEV: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "connection_name": "list_DWHHD_DEV"} */
+
+    show terse schemas in database DWHHD_DEV
+    limit 10000
+2021-11-25 14:59:42.657019 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-11-25 14:59:43.097677 (ThreadPoolExecutor-0_0): SelectableGroups dict interface is deprecated. Use select.
+2021-11-25 14:59:43.099679 (ThreadPoolExecutor-0_0): Loading KWallet
+2021-11-25 14:59:43.101700 (ThreadPoolExecutor-0_0): Loading SecretService
+2021-11-25 14:59:43.103852 (ThreadPoolExecutor-0_0): Loading Windows
+2021-11-25 14:59:43.232823 (ThreadPoolExecutor-0_0): Loading chainer
+2021-11-25 14:59:43.235823 (ThreadPoolExecutor-0_0): Loading macOS
+2021-11-25 14:59:47.588050 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 18 in 4.93 seconds
+2021-11-25 14:59:47.593049 (ThreadPoolExecutor-0_0): On list_DWHHD_DEV: Close
+2021-11-25 14:59:47.727142 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DWHHD_DEV_INM_DATASHARING".
+2021-11-25 14:59:47.742048 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DWHHD_DEV_INM_DATASHARING".
+2021-11-25 14:59:47.742048 (ThreadPoolExecutor-1_0): On list_DWHHD_DEV_INM_DATASHARING: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "connection_name": "list_DWHHD_DEV_INM_DATASHARING"} */
+
+    show terse objects in DWHHD_DEV.INM_DATASHARING
+2021-11-25 14:59:47.742048 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2021-11-25 14:59:48.160364 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 8 in 0.42 seconds
+2021-11-25 14:59:48.165512 (ThreadPoolExecutor-1_0): On list_DWHHD_DEV_INM_DATASHARING: Close
+2021-11-25 14:59:48.294068 (MainThread): Using snowflake connection "master".
+2021-11-25 14:59:48.294068 (MainThread): On master: BEGIN
+2021-11-25 14:59:48.294068 (MainThread): Opening a new connection, currently in state init
+2021-11-25 14:59:48.776203 (MainThread): SQL status: SUCCESS 1 in 0.48 seconds
+2021-11-25 14:59:48.777202 (MainThread): On master: COMMIT
+2021-11-25 14:59:48.777202 (MainThread): Using snowflake connection "master".
+2021-11-25 14:59:48.777202 (MainThread): On master: COMMIT
+2021-11-25 14:59:49.004200 (MainThread): SQL status: SUCCESS 1 in 0.23 seconds
+2021-11-25 14:59:49.004200 (MainThread): On master: Close
+2021-11-25 14:59:49.129269 (MainThread): 15:59:49 | Concurrency: 1 threads (target='dev')
+2021-11-25 14:59:49.130263 (MainThread): 15:59:49 | 
+2021-11-25 14:59:49.137264 (Thread-1): Began running node model.dbt_ods_delta.od_coc_auftrag_vertrag_akt
+2021-11-25 14:59:49.139265 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.od_coc_auftrag_vertrag_akt".
+2021-11-25 14:59:49.140265 (Thread-1): Compiling model.dbt_ods_delta.od_coc_auftrag_vertrag_akt
+2021-11-25 14:59:49.146283 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.od_coc_auftrag_vertrag_akt"
+2021-11-25 14:59:49.148265 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.149267 (Thread-1): Finished running node model.dbt_ods_delta.od_coc_auftrag_vertrag_akt
+2021-11-25 14:59:49.149267 (Thread-1): Began running node model.dbt_ods_delta.od_vertragskontext_akt
+2021-11-25 14:59:49.151262 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.od_vertragskontext_akt".
+2021-11-25 14:59:49.151262 (Thread-1): Compiling model.dbt_ods_delta.od_vertragskontext_akt
+2021-11-25 14:59:49.156378 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.od_vertragskontext_akt"
+2021-11-25 14:59:49.158272 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.159266 (Thread-1): Finished running node model.dbt_ods_delta.od_vertragskontext_akt
+2021-11-25 14:59:49.159266 (Thread-1): Began running node model.dbt_ods_delta.vg_anschrift_akt
+2021-11-25 14:59:49.161266 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_anschrift_akt".
+2021-11-25 14:59:49.161266 (Thread-1): Compiling model.dbt_ods_delta.vg_anschrift_akt
+2021-11-25 14:59:49.166273 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_anschrift_akt"
+2021-11-25 14:59:49.167271 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.168267 (Thread-1): Finished running node model.dbt_ods_delta.vg_anschrift_akt
+2021-11-25 14:59:49.168267 (Thread-1): Began running node model.dbt_ods_delta.vg_bankverbindung_akt
+2021-11-25 14:59:49.169269 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_bankverbindung_akt".
+2021-11-25 14:59:49.169269 (Thread-1): Compiling model.dbt_ods_delta.vg_bankverbindung_akt
+2021-11-25 14:59:49.175264 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_bankverbindung_akt"
+2021-11-25 14:59:49.176263 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.177262 (Thread-1): Finished running node model.dbt_ods_delta.vg_bankverbindung_akt
+2021-11-25 14:59:49.177262 (Thread-1): Began running node model.dbt_ods_delta.vg_beitrag_akt
+2021-11-25 14:59:49.178312 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_beitrag_akt".
+2021-11-25 14:59:49.178312 (Thread-1): Compiling model.dbt_ods_delta.vg_beitrag_akt
+2021-11-25 14:59:49.183267 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_beitrag_akt"
+2021-11-25 14:59:49.185270 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.185270 (Thread-1): Finished running node model.dbt_ods_delta.vg_beitrag_akt
+2021-11-25 14:59:49.186276 (Thread-1): Began running node model.dbt_ods_delta.vg_betriebswirtschaftdaten_akt
+2021-11-25 14:59:49.187271 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_betriebswirtschaftdaten_akt".
+2021-11-25 14:59:49.187271 (Thread-1): Compiling model.dbt_ods_delta.vg_betriebswirtschaftdaten_akt
+2021-11-25 14:59:49.193264 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_betriebswirtschaftdaten_akt"
+2021-11-25 14:59:49.195273 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.195273 (Thread-1): Finished running node model.dbt_ods_delta.vg_betriebswirtschaftdaten_akt
+2021-11-25 14:59:49.195273 (Thread-1): Began running node model.dbt_ods_delta.vg_bonusmalus_akt
+2021-11-25 14:59:49.196272 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_bonusmalus_akt".
+2021-11-25 14:59:49.196272 (Thread-1): Compiling model.dbt_ods_delta.vg_bonusmalus_akt
+2021-11-25 14:59:49.201273 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_bonusmalus_akt"
+2021-11-25 14:59:49.203267 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.204274 (Thread-1): Finished running node model.dbt_ods_delta.vg_bonusmalus_akt
+2021-11-25 14:59:49.204274 (Thread-1): Began running node model.dbt_ods_delta.vg_coc_auftrag_partner_akt
+2021-11-25 14:59:49.206273 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_coc_auftrag_partner_akt".
+2021-11-25 14:59:49.206273 (Thread-1): Compiling model.dbt_ods_delta.vg_coc_auftrag_partner_akt
+2021-11-25 14:59:49.211271 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_coc_auftrag_partner_akt"
+2021-11-25 14:59:49.212282 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.213283 (Thread-1): Finished running node model.dbt_ods_delta.vg_coc_auftrag_partner_akt
+2021-11-25 14:59:49.214273 (Thread-1): Began running node model.dbt_ods_delta.vg_coc_auftrag_vertrag_akt
+2021-11-25 14:59:49.215273 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_coc_auftrag_vertrag_akt".
+2021-11-25 14:59:49.215273 (Thread-1): Compiling model.dbt_ods_delta.vg_coc_auftrag_vertrag_akt
+2021-11-25 14:59:49.222267 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_coc_auftrag_vertrag_akt"
+2021-11-25 14:59:49.223273 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.224264 (Thread-1): Finished running node model.dbt_ods_delta.vg_coc_auftrag_vertrag_akt
+2021-11-25 14:59:49.224264 (Thread-1): Began running node model.dbt_ods_delta.vg_deckung_akt
+2021-11-25 14:59:49.225272 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_deckung_akt".
+2021-11-25 14:59:49.225272 (Thread-1): Compiling model.dbt_ods_delta.vg_deckung_akt
+2021-11-25 14:59:49.230268 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_deckung_akt"
+2021-11-25 14:59:49.231267 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.232267 (Thread-1): Finished running node model.dbt_ods_delta.vg_deckung_akt
+2021-11-25 14:59:49.232267 (Thread-1): Began running node model.dbt_ods_delta.vg_drittrechtglaeubiger_akt
+2021-11-25 14:59:49.232267 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_drittrechtglaeubiger_akt".
+2021-11-25 14:59:49.233276 (Thread-1): Compiling model.dbt_ods_delta.vg_drittrechtglaeubiger_akt
+2021-11-25 14:59:49.239268 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_drittrechtglaeubiger_akt"
+2021-11-25 14:59:49.241274 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.241274 (Thread-1): Finished running node model.dbt_ods_delta.vg_drittrechtglaeubiger_akt
+2021-11-25 14:59:49.242272 (Thread-1): Began running node model.dbt_ods_delta.vg_externereferenz_akt
+2021-11-25 14:59:49.242272 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_externereferenz_akt".
+2021-11-25 14:59:49.243268 (Thread-1): Compiling model.dbt_ods_delta.vg_externereferenz_akt
+2021-11-25 14:59:49.247273 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_externereferenz_akt"
+2021-11-25 14:59:49.249275 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.250268 (Thread-1): Finished running node model.dbt_ods_delta.vg_externereferenz_akt
+2021-11-25 14:59:49.250268 (Thread-1): Began running node model.dbt_ods_delta.vg_externereferenz_partner_akt
+2021-11-25 14:59:49.251278 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_externereferenz_partner_akt".
+2021-11-25 14:59:49.251278 (Thread-1): Compiling model.dbt_ods_delta.vg_externereferenz_partner_akt
+2021-11-25 14:59:49.255268 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_externereferenz_partner_akt"
+2021-11-25 14:59:49.256268 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.257276 (Thread-1): Finished running node model.dbt_ods_delta.vg_externereferenz_partner_akt
+2021-11-25 14:59:49.257276 (Thread-1): Began running node model.dbt_ods_delta.vg_fremdvertrag_akt
+2021-11-25 14:59:49.258284 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_fremdvertrag_akt".
+2021-11-25 14:59:49.258284 (Thread-1): Compiling model.dbt_ods_delta.vg_fremdvertrag_akt
+2021-11-25 14:59:49.263273 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_fremdvertrag_akt"
+2021-11-25 14:59:49.265268 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.265268 (Thread-1): Finished running node model.dbt_ods_delta.vg_fremdvertrag_akt
+2021-11-25 14:59:49.265268 (Thread-1): Began running node model.dbt_ods_delta.vg_internereferenz_akt
+2021-11-25 14:59:49.266268 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_internereferenz_akt".
+2021-11-25 14:59:49.266268 (Thread-1): Compiling model.dbt_ods_delta.vg_internereferenz_akt
+2021-11-25 14:59:49.271264 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_internereferenz_akt"
+2021-11-25 14:59:49.272268 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.272268 (Thread-1): Finished running node model.dbt_ods_delta.vg_internereferenz_akt
+2021-11-25 14:59:49.273264 (Thread-1): Began running node model.dbt_ods_delta.vg_kfzspezifischemerkmale_akt
+2021-11-25 14:59:49.273264 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kfzspezifischemerkmale_akt".
+2021-11-25 14:59:49.273264 (Thread-1): Compiling model.dbt_ods_delta.vg_kfzspezifischemerkmale_akt
+2021-11-25 14:59:49.278345 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_kfzspezifischemerkmale_akt"
+2021-11-25 14:59:49.280270 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.281270 (Thread-1): Finished running node model.dbt_ods_delta.vg_kfzspezifischemerkmale_akt
+2021-11-25 14:59:49.281270 (Thread-1): Began running node model.dbt_ods_delta.vg_klauselnbedingungen_akt
+2021-11-25 14:59:49.282276 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_klauselnbedingungen_akt".
+2021-11-25 14:59:49.283269 (Thread-1): Compiling model.dbt_ods_delta.vg_klauselnbedingungen_akt
+2021-11-25 14:59:49.287269 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_klauselnbedingungen_akt"
+2021-11-25 14:59:49.288269 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.289272 (Thread-1): Finished running node model.dbt_ods_delta.vg_klauselnbedingungen_akt
+2021-11-25 14:59:49.290272 (Thread-1): Began running node model.dbt_ods_delta.vg_kommunikationskanal_akt
+2021-11-25 14:59:49.290272 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kommunikationskanal_akt".
+2021-11-25 14:59:49.291271 (Thread-1): Compiling model.dbt_ods_delta.vg_kommunikationskanal_akt
+2021-11-25 14:59:49.295269 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_kommunikationskanal_akt"
+2021-11-25 14:59:49.296268 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.296268 (Thread-1): Finished running node model.dbt_ods_delta.vg_kommunikationskanal_akt
+2021-11-25 14:59:49.296268 (Thread-1): Began running node model.dbt_ods_delta.vg_kostenstelle_akt
+2021-11-25 14:59:49.297269 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kostenstelle_akt".
+2021-11-25 14:59:49.297269 (Thread-1): Compiling model.dbt_ods_delta.vg_kostenstelle_akt
+2021-11-25 14:59:49.302272 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_kostenstelle_akt"
+2021-11-25 14:59:49.304072 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.304580 (Thread-1): Finished running node model.dbt_ods_delta.vg_kostenstelle_akt
+2021-11-25 14:59:49.304580 (Thread-1): Began running node model.dbt_ods_delta.vg_kostenstelle_zuordnung_akt
+2021-11-25 14:59:49.305269 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kostenstelle_zuordnung_akt".
+2021-11-25 14:59:49.305269 (Thread-1): Compiling model.dbt_ods_delta.vg_kostenstelle_zuordnung_akt
+2021-11-25 14:59:49.313272 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_kostenstelle_zuordnung_akt"
+2021-11-25 14:59:49.315271 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.316274 (Thread-1): Finished running node model.dbt_ods_delta.vg_kostenstelle_zuordnung_akt
+2021-11-25 14:59:49.316274 (Thread-1): Began running node model.dbt_ods_delta.vg_kraftfahrzeug_akt
+2021-11-25 14:59:49.317279 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_kraftfahrzeug_akt".
+2021-11-25 14:59:49.317279 (Thread-1): Compiling model.dbt_ods_delta.vg_kraftfahrzeug_akt
+2021-11-25 14:59:49.322273 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_kraftfahrzeug_akt"
+2021-11-25 14:59:49.323273 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.324288 (Thread-1): Finished running node model.dbt_ods_delta.vg_kraftfahrzeug_akt
+2021-11-25 14:59:49.324288 (Thread-1): Began running node model.dbt_ods_delta.vg_lv_bezugsrecht_akt
+2021-11-25 14:59:49.326276 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_lv_bezugsrecht_akt".
+2021-11-25 14:59:49.326276 (Thread-1): Compiling model.dbt_ods_delta.vg_lv_bezugsrecht_akt
+2021-11-25 14:59:49.334285 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_lv_bezugsrecht_akt"
+2021-11-25 14:59:49.336276 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.337277 (Thread-1): Finished running node model.dbt_ods_delta.vg_lv_bezugsrecht_akt
+2021-11-25 14:59:49.338275 (Thread-1): Began running node model.dbt_ods_delta.vg_lv_leistung_akt
+2021-11-25 14:59:49.339279 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_lv_leistung_akt".
+2021-11-25 14:59:49.340273 (Thread-1): Compiling model.dbt_ods_delta.vg_lv_leistung_akt
+2021-11-25 14:59:49.346271 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_lv_leistung_akt"
+2021-11-25 14:59:49.348270 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.349271 (Thread-1): Finished running node model.dbt_ods_delta.vg_lv_leistung_akt
+2021-11-25 14:59:49.349271 (Thread-1): Began running node model.dbt_ods_delta.vg_lv_leistung_flv_akt
+2021-11-25 14:59:49.350269 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_lv_leistung_flv_akt".
+2021-11-25 14:59:49.350269 (Thread-1): Compiling model.dbt_ods_delta.vg_lv_leistung_flv_akt
+2021-11-25 14:59:49.354278 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_lv_leistung_flv_akt"
+2021-11-25 14:59:49.356270 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.357269 (Thread-1): Finished running node model.dbt_ods_delta.vg_lv_leistung_flv_akt
+2021-11-25 14:59:49.357269 (Thread-1): Began running node model.dbt_ods_delta.vg_lv_leistung_konv_akt
+2021-11-25 14:59:49.358277 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_lv_leistung_konv_akt".
+2021-11-25 14:59:49.358277 (Thread-1): Compiling model.dbt_ods_delta.vg_lv_leistung_konv_akt
+2021-11-25 14:59:49.363269 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_lv_leistung_konv_akt"
+2021-11-25 14:59:49.364269 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.365270 (Thread-1): Finished running node model.dbt_ods_delta.vg_lv_leistung_konv_akt
+2021-11-25 14:59:49.365270 (Thread-1): Began running node model.dbt_ods_delta.vg_mahnung_akt
+2021-11-25 14:59:49.366269 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_mahnung_akt".
+2021-11-25 14:59:49.366269 (Thread-1): Compiling model.dbt_ods_delta.vg_mahnung_akt
+2021-11-25 14:59:49.372271 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_mahnung_akt"
+2021-11-25 14:59:49.373271 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.374271 (Thread-1): Finished running node model.dbt_ods_delta.vg_mahnung_akt
+2021-11-25 14:59:49.374271 (Thread-1): Began running node model.dbt_ods_delta.vg_marketingmassnahme_akt
+2021-11-25 14:59:49.375277 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_marketingmassnahme_akt".
+2021-11-25 14:59:49.375277 (Thread-1): Compiling model.dbt_ods_delta.vg_marketingmassnahme_akt
+2021-11-25 14:59:49.380269 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_marketingmassnahme_akt"
+2021-11-25 14:59:49.381275 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.382276 (Thread-1): Finished running node model.dbt_ods_delta.vg_marketingmassnahme_akt
+2021-11-25 14:59:49.382276 (Thread-1): Began running node model.dbt_ods_delta.vg_nutzer_akt
+2021-11-25 14:59:49.383271 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_nutzer_akt".
+2021-11-25 14:59:49.383271 (Thread-1): Compiling model.dbt_ods_delta.vg_nutzer_akt
+2021-11-25 14:59:49.387276 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_nutzer_akt"
+2021-11-25 14:59:49.389277 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.390271 (Thread-1): Finished running node model.dbt_ods_delta.vg_nutzer_akt
+2021-11-25 14:59:49.390271 (Thread-1): Began running node model.dbt_ods_delta.vg_partner_akt
+2021-11-25 14:59:49.390271 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_partner_akt".
+2021-11-25 14:59:49.390271 (Thread-1): Compiling model.dbt_ods_delta.vg_partner_akt
+2021-11-25 14:59:49.396276 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_partner_akt"
+2021-11-25 14:59:49.397272 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.398272 (Thread-1): Finished running node model.dbt_ods_delta.vg_partner_akt
+2021-11-25 14:59:49.398272 (Thread-1): Began running node model.dbt_ods_delta.vg_partner_kennzeichen_akt
+2021-11-25 14:59:49.399269 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_partner_kennzeichen_akt".
+2021-11-25 14:59:49.399269 (Thread-1): Compiling model.dbt_ods_delta.vg_partner_kennzeichen_akt
+2021-11-25 14:59:49.403273 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_partner_kennzeichen_akt"
+2021-11-25 14:59:49.404275 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.404275 (Thread-1): Finished running node model.dbt_ods_delta.vg_partner_kennzeichen_akt
+2021-11-25 14:59:49.405273 (Thread-1): Began running node model.dbt_ods_delta.vg_partnerbeziehung_akt
+2021-11-25 14:59:49.405273 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_partnerbeziehung_akt".
+2021-11-25 14:59:49.406272 (Thread-1): Compiling model.dbt_ods_delta.vg_partnerbeziehung_akt
+2021-11-25 14:59:49.411281 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_partnerbeziehung_akt"
+2021-11-25 14:59:49.413274 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.414269 (Thread-1): Finished running node model.dbt_ods_delta.vg_partnerbeziehung_akt
+2021-11-25 14:59:49.414269 (Thread-1): Began running node model.dbt_ods_delta.vg_rolle_akt
+2021-11-25 14:59:49.416274 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_rolle_akt".
+2021-11-25 14:59:49.417277 (Thread-1): Compiling model.dbt_ods_delta.vg_rolle_akt
+2021-11-25 14:59:49.423278 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_rolle_akt"
+2021-11-25 14:59:49.424279 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.425280 (Thread-1): Finished running node model.dbt_ods_delta.vg_rolle_akt
+2021-11-25 14:59:49.425280 (Thread-1): Began running node model.dbt_ods_delta.vg_schaden_akt
+2021-11-25 14:59:49.426288 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schaden_akt".
+2021-11-25 14:59:49.426288 (Thread-1): Compiling model.dbt_ods_delta.vg_schaden_akt
+2021-11-25 14:59:49.431285 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_schaden_akt"
+2021-11-25 14:59:49.432280 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.433279 (Thread-1): Finished running node model.dbt_ods_delta.vg_schaden_akt
+2021-11-25 14:59:49.433279 (Thread-1): Began running node model.dbt_ods_delta.vg_schaden_art_akt
+2021-11-25 14:59:49.434278 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schaden_art_akt".
+2021-11-25 14:59:49.434278 (Thread-1): Compiling model.dbt_ods_delta.vg_schaden_art_akt
+2021-11-25 14:59:49.438296 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_schaden_art_akt"
+2021-11-25 14:59:49.438296 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.441281 (Thread-1): Finished running node model.dbt_ods_delta.vg_schaden_art_akt
+2021-11-25 14:59:49.441281 (Thread-1): Began running node model.dbt_ods_delta.vg_schadenereignis_akt
+2021-11-25 14:59:49.442276 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenereignis_akt".
+2021-11-25 14:59:49.442276 (Thread-1): Compiling model.dbt_ods_delta.vg_schadenereignis_akt
+2021-11-25 14:59:49.447279 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_schadenereignis_akt"
+2021-11-25 14:59:49.450277 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.451277 (Thread-1): Finished running node model.dbt_ods_delta.vg_schadenereignis_akt
+2021-11-25 14:59:49.451277 (Thread-1): Began running node model.dbt_ods_delta.vg_schadenereignis_bez_akt
+2021-11-25 14:59:49.452287 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenereignis_bez_akt".
+2021-11-25 14:59:49.453287 (Thread-1): Compiling model.dbt_ods_delta.vg_schadenereignis_bez_akt
+2021-11-25 14:59:49.461274 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_schadenereignis_bez_akt"
+2021-11-25 14:59:49.463274 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.463274 (Thread-1): Finished running node model.dbt_ods_delta.vg_schadenereignis_bez_akt
+2021-11-25 14:59:49.464278 (Thread-1): Began running node model.dbt_ods_delta.vg_schadenkategorie_akt
+2021-11-25 14:59:49.465283 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenkategorie_akt".
+2021-11-25 14:59:49.465283 (Thread-1): Compiling model.dbt_ods_delta.vg_schadenkategorie_akt
+2021-11-25 14:59:49.470280 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_schadenkategorie_akt"
+2021-11-25 14:59:49.472353 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.473277 (Thread-1): Finished running node model.dbt_ods_delta.vg_schadenkategorie_akt
+2021-11-25 14:59:49.473277 (Thread-1): Began running node model.dbt_ods_delta.vg_schadenrolle_akt
+2021-11-25 14:59:49.474275 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenrolle_akt".
+2021-11-25 14:59:49.474275 (Thread-1): Compiling model.dbt_ods_delta.vg_schadenrolle_akt
+2021-11-25 14:59:49.480272 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_schadenrolle_akt"
+2021-11-25 14:59:49.481272 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.484272 (Thread-1): Finished running node model.dbt_ods_delta.vg_schadenrolle_akt
+2021-11-25 14:59:49.485276 (Thread-1): Began running node model.dbt_ods_delta.vg_schadenzahlung_akt
+2021-11-25 14:59:49.485276 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_schadenzahlung_akt".
+2021-11-25 14:59:49.486272 (Thread-1): Compiling model.dbt_ods_delta.vg_schadenzahlung_akt
+2021-11-25 14:59:49.491273 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_schadenzahlung_akt"
+2021-11-25 14:59:49.493282 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.494276 (Thread-1): Finished running node model.dbt_ods_delta.vg_schadenzahlung_akt
+2021-11-25 14:59:49.494276 (Thread-1): Began running node model.dbt_ods_delta.vg_selbstbehalte_akt
+2021-11-25 14:59:49.495274 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_selbstbehalte_akt".
+2021-11-25 14:59:49.495274 (Thread-1): Compiling model.dbt_ods_delta.vg_selbstbehalte_akt
+2021-11-25 14:59:49.501274 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_selbstbehalte_akt"
+2021-11-25 14:59:49.503270 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.504287 (Thread-1): Finished running node model.dbt_ods_delta.vg_selbstbehalte_akt
+2021-11-25 14:59:49.504287 (Thread-1): Began running node model.dbt_ods_delta.vg_stufung_akt
+2021-11-25 14:59:49.505276 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_stufung_akt".
+2021-11-25 14:59:49.505276 (Thread-1): Compiling model.dbt_ods_delta.vg_stufung_akt
+2021-11-25 14:59:49.511281 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_stufung_akt"
+2021-11-25 14:59:49.512277 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.513274 (Thread-1): Finished running node model.dbt_ods_delta.vg_stufung_akt
+2021-11-25 14:59:49.513274 (Thread-1): Began running node model.dbt_ods_delta.vg_typregio_akt
+2021-11-25 14:59:49.514281 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_typregio_akt".
+2021-11-25 14:59:49.514281 (Thread-1): Compiling model.dbt_ods_delta.vg_typregio_akt
+2021-11-25 14:59:49.522274 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_typregio_akt"
+2021-11-25 14:59:49.523273 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.524276 (Thread-1): Finished running node model.dbt_ods_delta.vg_typregio_akt
+2021-11-25 14:59:49.524276 (Thread-1): Began running node model.dbt_ods_delta.vg_vermittlervereinbarung_akt
+2021-11-25 14:59:49.525272 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vermittlervereinbarung_akt".
+2021-11-25 14:59:49.525272 (Thread-1): Compiling model.dbt_ods_delta.vg_vermittlervereinbarung_akt
+2021-11-25 14:59:49.531269 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_vermittlervereinbarung_akt"
+2021-11-25 14:59:49.533274 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.534282 (Thread-1): Finished running node model.dbt_ods_delta.vg_vermittlervereinbarung_akt
+2021-11-25 14:59:49.534282 (Thread-1): Began running node model.dbt_ods_delta.vg_vermittlervertrag_akt
+2021-11-25 14:59:49.535280 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vermittlervertrag_akt".
+2021-11-25 14:59:49.535280 (Thread-1): Compiling model.dbt_ods_delta.vg_vermittlervertrag_akt
+2021-11-25 14:59:49.541278 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_vermittlervertrag_akt"
+2021-11-25 14:59:49.542281 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.543276 (Thread-1): Finished running node model.dbt_ods_delta.vg_vermittlervertrag_akt
+2021-11-25 14:59:49.543276 (Thread-1): Began running node model.dbt_ods_delta.vg_versichertesobjekt_akt
+2021-11-25 14:59:49.544271 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_versichertesobjekt_akt".
+2021-11-25 14:59:49.544271 (Thread-1): Compiling model.dbt_ods_delta.vg_versichertesobjekt_akt
+2021-11-25 14:59:49.549598 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_versichertesobjekt_akt"
+2021-11-25 14:59:49.551274 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.552276 (Thread-1): Finished running node model.dbt_ods_delta.vg_versichertesobjekt_akt
+2021-11-25 14:59:49.552276 (Thread-1): Began running node model.dbt_ods_delta.vg_versichertesobjektkfz_akt
+2021-11-25 14:59:49.552276 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_versichertesobjektkfz_akt".
+2021-11-25 14:59:49.553279 (Thread-1): Compiling model.dbt_ods_delta.vg_versichertesobjektkfz_akt
+2021-11-25 14:59:49.560327 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_versichertesobjektkfz_akt"
+2021-11-25 14:59:49.562277 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.563284 (Thread-1): Finished running node model.dbt_ods_delta.vg_versichertesobjektkfz_akt
+2021-11-25 14:59:49.563284 (Thread-1): Began running node model.dbt_ods_delta.vg_vertrag_akt
+2021-11-25 14:59:49.564278 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertrag_akt".
+2021-11-25 14:59:49.564278 (Thread-1): Compiling model.dbt_ods_delta.vg_vertrag_akt
+2021-11-25 14:59:49.570279 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_vertrag_akt"
+2021-11-25 14:59:49.572277 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.572277 (Thread-1): Finished running node model.dbt_ods_delta.vg_vertrag_akt
+2021-11-25 14:59:49.573278 (Thread-1): Began running node model.dbt_ods_delta.vg_vertragsbeziehung_akt
+2021-11-25 14:59:49.574277 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragsbeziehung_akt".
+2021-11-25 14:59:49.574277 (Thread-1): Compiling model.dbt_ods_delta.vg_vertragsbeziehung_akt
+2021-11-25 14:59:49.580284 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_vertragsbeziehung_akt"
+2021-11-25 14:59:49.582283 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.582283 (Thread-1): Finished running node model.dbt_ods_delta.vg_vertragsbeziehung_akt
+2021-11-25 14:59:49.583284 (Thread-1): Began running node model.dbt_ods_delta.vg_vertragskontext_akt
+2021-11-25 14:59:49.583284 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragskontext_akt".
+2021-11-25 14:59:49.584279 (Thread-1): Compiling model.dbt_ods_delta.vg_vertragskontext_akt
+2021-11-25 14:59:49.590278 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_vertragskontext_akt"
+2021-11-25 14:59:49.593274 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.594273 (Thread-1): Finished running node model.dbt_ods_delta.vg_vertragskontext_akt
+2021-11-25 14:59:49.594273 (Thread-1): Began running node model.dbt_ods_delta.vg_vertragstandard_akt
+2021-11-25 14:59:49.595278 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragstandard_akt".
+2021-11-25 14:59:49.595278 (Thread-1): Compiling model.dbt_ods_delta.vg_vertragstandard_akt
+2021-11-25 14:59:49.600277 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_vertragstandard_akt"
+2021-11-25 14:59:49.601277 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.602276 (Thread-1): Finished running node model.dbt_ods_delta.vg_vertragstandard_akt
+2021-11-25 14:59:49.602276 (Thread-1): Began running node model.dbt_ods_delta.vg_vertragsteil_akt
+2021-11-25 14:59:49.603274 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragsteil_akt".
+2021-11-25 14:59:49.603274 (Thread-1): Compiling model.dbt_ods_delta.vg_vertragsteil_akt
+2021-11-25 14:59:49.608275 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_vertragsteil_akt"
+2021-11-25 14:59:49.609428 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.610281 (Thread-1): Finished running node model.dbt_ods_delta.vg_vertragsteil_akt
+2021-11-25 14:59:49.610281 (Thread-1): Began running node model.dbt_ods_delta.vg_vertragsteilbuendel_akt
+2021-11-25 14:59:49.610281 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_vertragsteilbuendel_akt".
+2021-11-25 14:59:49.611275 (Thread-1): Compiling model.dbt_ods_delta.vg_vertragsteilbuendel_akt
+2021-11-25 14:59:49.615279 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_vertragsteilbuendel_akt"
+2021-11-25 14:59:49.616279 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.616279 (Thread-1): Finished running node model.dbt_ods_delta.vg_vertragsteilbuendel_akt
+2021-11-25 14:59:49.617277 (Thread-1): Began running node model.dbt_ods_delta.vg_wertungsgrundlteilung_akt
+2021-11-25 14:59:49.617277 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_wertungsgrundlteilung_akt".
+2021-11-25 14:59:49.618279 (Thread-1): Compiling model.dbt_ods_delta.vg_wertungsgrundlteilung_akt
+2021-11-25 14:59:49.623286 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_wertungsgrundlteilung_akt"
+2021-11-25 14:59:49.625279 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.626284 (Thread-1): Finished running node model.dbt_ods_delta.vg_wertungsgrundlteilung_akt
+2021-11-25 14:59:49.626284 (Thread-1): Began running node model.dbt_ods_delta.vg_wirtschaftszweig_akt
+2021-11-25 14:59:49.627276 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_wirtschaftszweig_akt".
+2021-11-25 14:59:49.627276 (Thread-1): Compiling model.dbt_ods_delta.vg_wirtschaftszweig_akt
+2021-11-25 14:59:49.633285 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_wirtschaftszweig_akt"
+2021-11-25 14:59:49.634286 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.635282 (Thread-1): Finished running node model.dbt_ods_delta.vg_wirtschaftszweig_akt
+2021-11-25 14:59:49.635282 (Thread-1): Began running node model.dbt_ods_delta.vg_zuschl_nachl_akt
+2021-11-25 14:59:49.636274 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vg_zuschl_nachl_akt".
+2021-11-25 14:59:49.636274 (Thread-1): Compiling model.dbt_ods_delta.vg_zuschl_nachl_akt
+2021-11-25 14:59:49.641275 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vg_zuschl_nachl_akt"
+2021-11-25 14:59:49.642275 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.643281 (Thread-1): Finished running node model.dbt_ods_delta.vg_zuschl_nachl_akt
+2021-11-25 14:59:49.643281 (Thread-1): Began running node model.dbt_ods_delta.od_coc_auftrag_partner_akt
+2021-11-25 14:59:49.644281 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.od_coc_auftrag_partner_akt".
+2021-11-25 14:59:49.644281 (Thread-1): Compiling model.dbt_ods_delta.od_coc_auftrag_partner_akt
+2021-11-25 14:59:49.648275 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.od_coc_auftrag_partner_akt"
+2021-11-25 14:59:49.649276 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.650274 (Thread-1): Finished running node model.dbt_ods_delta.od_coc_auftrag_partner_akt
+2021-11-25 14:59:49.650274 (Thread-1): Began running node model.dbt_ods_delta.od_schaden_akt
+2021-11-25 14:59:49.651278 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.od_schaden_akt".
+2021-11-25 14:59:49.651278 (Thread-1): Compiling model.dbt_ods_delta.od_schaden_akt
+2021-11-25 14:59:49.657303 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.od_schaden_akt"
+2021-11-25 14:59:49.658278 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.658278 (Thread-1): Finished running node model.dbt_ods_delta.od_schaden_akt
+2021-11-25 14:59:49.659287 (Thread-1): Began running node model.dbt_ods_delta.od_vertrag_akt
+2021-11-25 14:59:49.660279 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.od_vertrag_akt".
+2021-11-25 14:59:49.660279 (Thread-1): Compiling model.dbt_ods_delta.od_vertrag_akt
+2021-11-25 14:59:49.668281 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.od_vertrag_akt"
+2021-11-25 14:59:49.669281 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.670280 (Thread-1): Finished running node model.dbt_ods_delta.od_vertrag_akt
+2021-11-25 14:59:49.671277 (Thread-1): Began running node model.dbt_ods_delta.vs_vertrag
+2021-11-25 14:59:49.671277 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.vs_vertrag".
+2021-11-25 14:59:49.672276 (Thread-1): Compiling model.dbt_ods_delta.vs_vertrag
+2021-11-25 14:59:49.677280 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.vs_vertrag"
+2021-11-25 14:59:49.680274 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.681274 (Thread-1): Finished running node model.dbt_ods_delta.vs_vertrag
+2021-11-25 14:59:49.681274 (Thread-1): Began running node model.dbt_ods_delta.filter_vertrag_crm
+2021-11-25 14:59:49.682275 (Thread-1): 15:59:49 | 1 of 8 START table model INM_DATASHARING.filter_vertrag_crm.......... [RUN]
+2021-11-25 14:59:49.683276 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.filter_vertrag_crm".
+2021-11-25 14:59:49.683276 (Thread-1): Compiling model.dbt_ods_delta.filter_vertrag_crm
+2021-11-25 14:59:49.753281 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.filter_vertrag_crm"
+2021-11-25 14:59:49.754282 (Thread-1): finished collecting timing info
+2021-11-25 14:59:49.839308 (Thread-1): Writing runtime SQL for node "model.dbt_ods_delta.filter_vertrag_crm"
+2021-11-25 14:59:49.847440 (Thread-1): Using snowflake connection "model.dbt_ods_delta.filter_vertrag_crm".
+2021-11-25 14:59:49.848286 (Thread-1): On model.dbt_ods_delta.filter_vertrag_crm: BEGIN
+2021-11-25 14:59:49.848286 (Thread-1): Opening a new connection, currently in state init
+2021-11-25 14:59:51.085146 (Thread-1): SQL status: SUCCESS 1 in 1.24 seconds
+2021-11-25 14:59:51.086147 (Thread-1): Using snowflake connection "model.dbt_ods_delta.filter_vertrag_crm".
+2021-11-25 14:59:51.086147 (Thread-1): On model.dbt_ods_delta.filter_vertrag_crm: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_ods_delta.filter_vertrag_crm"} */
+
+
+      create or replace transient table DWHHD_DEV.INM_DATASHARING.filter_vertrag_crm  as
+      (
+
+with  __dbt__CTE__od_vertragskontext_akt as (
+select *
+from DWHHD_DEV.da.od_vertragskontext_akt
+),source_data as (
+
+ SELECT vk.TIK_VERTRAG
+  FROM __dbt__CTE__od_vertragskontext_akt VK
+  WHERE VK.BESTANDSSCHLUESSEL NOT IN ('22','25')
+  AND ( VK.BESTANDSSCHLUESSEL NOT IN ('44')
+  OR VK.BESTANDSFUEHRUNG           ='23' )
+  AND ( VK.VERTRAGTYP             <> '18'
+  OR VK.VERTRAGTYP                IS NULL
+  OR vk.BESTANDSFUEHRUNG          <> '28'
+  OR vk.BESTANDSFUEHRUNG          IS NULL )
+  AND ( VK.VERTRAGTYP NOT         IN ('18','20')
+  OR VK.VERTRAGTYP                IS NULL
+  OR vk.BESTANDSFUEHRUNG          <> '29'
+  OR vk.BESTANDSFUEHRUNG          IS NULL )
+  AND ( VK.STATUS NOT             IN ('ABG','ABGNG','ANGEB','ANGEBO','ANTR','KB','RUH','STOR')
+  OR VK.STATUS                    IS NULL
+  OR NVL(VK.STATUSDATUM,current_timestamp) > dateadd(year, -10, to_date(current_timestamp))
+  OR VK.BESTANDSSCHLUESSEL        <> '80' )
+  AND ( VK.STATUS NOT             IN ('ABG','ABGNG','ANGEB','ANGEBO','ANTR','KB','RUH','STOR')
+  OR VK.STATUS                    IS NULL
+  OR NVL(VK.STATUSDATUM,current_timestamp) > dateadd(year, -10, to_date(current_timestamp))
+  OR VK.BESTANDSSCHLUESSEL         = '80' )
+  AND VK.VERTRAGOB                <>'000000000'
+
+					)
+
+select *
+from source_data
+      );
+2021-11-25 14:59:57.829174 (Thread-1): SQL status: SUCCESS 1 in 6.74 seconds
+2021-11-25 14:59:57.831169 (Thread-1): On model.dbt_ods_delta.filter_vertrag_crm: COMMIT
+2021-11-25 14:59:57.831169 (Thread-1): Using snowflake connection "model.dbt_ods_delta.filter_vertrag_crm".
+2021-11-25 14:59:57.831169 (Thread-1): On model.dbt_ods_delta.filter_vertrag_crm: COMMIT
+2021-11-25 14:59:57.916176 (Thread-1): SQL status: SUCCESS 1 in 0.09 seconds
+2021-11-25 14:59:57.936171 (Thread-1): finished collecting timing info
+2021-11-25 14:59:57.936171 (Thread-1): On model.dbt_ods_delta.filter_vertrag_crm: Close
+2021-11-25 14:59:58.082385 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '40ca1112-0499-4c83-8d65-c82bb16136ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F6E631C08>]}
+2021-11-25 14:59:58.083383 (Thread-1): 15:59:58 | 1 of 8 OK created table model INM_DATASHARING.filter_vertrag_crm..... [SUCCESS 1 in 8.40s]
+2021-11-25 14:59:58.084380 (Thread-1): Finished running node model.dbt_ods_delta.filter_vertrag_crm
+2021-11-25 14:59:58.084380 (Thread-1): Began running node model.dbt_ods_delta.ad_mod_schaden
+2021-11-25 14:59:58.084380 (Thread-1): 15:59:58 | 2 of 8 START table model INM_DATASHARING.ad_mod_schaden.............. [RUN]
+2021-11-25 14:59:58.087393 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_schaden".
+2021-11-25 14:59:58.087393 (Thread-1): Compiling model.dbt_ods_delta.ad_mod_schaden
+2021-11-25 14:59:58.112378 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.ad_mod_schaden"
+2021-11-25 14:59:58.113381 (Thread-1): finished collecting timing info
+2021-11-25 14:59:58.120380 (Thread-1): Writing runtime SQL for node "model.dbt_ods_delta.ad_mod_schaden"
+2021-11-25 14:59:58.127381 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_schaden".
+2021-11-25 14:59:58.128381 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden: BEGIN
+2021-11-25 14:59:58.128381 (Thread-1): Opening a new connection, currently in state closed
+2021-11-25 14:59:58.607391 (Thread-1): SQL status: SUCCESS 1 in 0.48 seconds
+2021-11-25 14:59:58.607391 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_schaden".
+2021-11-25 14:59:58.608390 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_ods_delta.ad_mod_schaden"} */
+
+
+      create or replace transient table DWHHD_DEV.INM_DATASHARING.ad_mod_schaden  as
+      (
+
+with  __dbt__CTE__vg_schaden_akt as (
+select *
+from DWHHD_DEV.da.vg_schaden_akt
+),  __dbt__CTE__vg_schadenereignis_akt as (
+select *
+from DWHHD_DEV.da.vg_schadenereignis_akt
+),  __dbt__CTE__vg_schadenereignis_bez_akt as (
+select *
+from DWHHD_DEV.da.vg_schadenereignis_bez_akt
+),  __dbt__CTE__vg_schadenkategorie_akt as (
+select *
+from DWHHD_DEV.da.vg_schadenkategorie_akt
+),  __dbt__CTE__vg_schadenzahlung_akt as (
+select *
+from DWHHD_DEV.da.vg_schadenzahlung_akt
+),  __dbt__CTE__vg_schadenrolle_akt as (
+select *
+from DWHHD_DEV.da.vg_schadenrolle_akt
+),  __dbt__CTE__vg_schaden_art_akt as (
+select *
+from DWHHD_DEV.da.vg_schaden_art_akt
+),source_data as (
+
+SELECT DISTINCT DWH_SCHADEN_ID  FROM (
+SELECT DWH_SCHADEN_ID  FROM __dbt__CTE__vg_schaden_akt  
+UNION ALL
+SELECT DWH_EREIGNIS_ID AS DWH_SCHADEN_ID FROM __dbt__CTE__vg_schadenereignis_akt 
+UNION ALL 
+SELECT DWH_SCHADEN_ID FROM __dbt__CTE__vg_schadenereignis_bez_akt 
+UNION ALL 
+SELECT DWH_SCHADEN_ID FROM __dbt__CTE__vg_schadenkategorie_akt 
+UNION ALL 
+SELECT DWH_SCHADEN_ID FROM __dbt__CTE__vg_schadenzahlung_akt 
+UNION ALL
+SELECT ID AS DWH_SCHADEN_ID FROM __dbt__CTE__vg_schadenrolle_akt  
+UNION ALL 
+SELECT DWH_SCHADEN_ID AS DWH_SCHADEN_ID FROM __dbt__CTE__vg_schaden_art_akt   
+)
+ORDER BY 1
+
+					)
+
+select *
+from source_data
+      );
+2021-11-25 14:59:59.906719 (Thread-1): SQL status: SUCCESS 1 in 1.30 seconds
+2021-11-25 14:59:59.909717 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden: COMMIT
+2021-11-25 14:59:59.909717 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_schaden".
+2021-11-25 14:59:59.909717 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden: COMMIT
+2021-11-25 15:00:00.220720 (Thread-1): SQL status: SUCCESS 1 in 0.31 seconds
+2021-11-25 15:00:00.222722 (Thread-1): finished collecting timing info
+2021-11-25 15:00:00.222722 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden: Close
+2021-11-25 15:00:00.351722 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '40ca1112-0499-4c83-8d65-c82bb16136ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F6E3C4188>]}
+2021-11-25 15:00:00.352726 (Thread-1): 16:00:00 | 2 of 8 OK created table model INM_DATASHARING.ad_mod_schaden......... [SUCCESS 1 in 2.26s]
+2021-11-25 15:00:00.352726 (Thread-1): Finished running node model.dbt_ods_delta.ad_mod_schaden
+2021-11-25 15:00:00.352726 (Thread-1): Began running node model.dbt_ods_delta.ad_mod_partner
+2021-11-25 15:00:00.353726 (Thread-1): 16:00:00 | 3 of 8 START table model INM_DATASHARING.ad_mod_partner.............. [RUN]
+2021-11-25 15:00:00.356731 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_partner".
+2021-11-25 15:00:00.356731 (Thread-1): Compiling model.dbt_ods_delta.ad_mod_partner
+2021-11-25 15:00:00.403736 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.ad_mod_partner"
+2021-11-25 15:00:00.405730 (Thread-1): finished collecting timing info
+2021-11-25 15:00:00.412724 (Thread-1): Writing runtime SQL for node "model.dbt_ods_delta.ad_mod_partner"
+2021-11-25 15:00:00.426725 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_partner".
+2021-11-25 15:00:00.426725 (Thread-1): On model.dbt_ods_delta.ad_mod_partner: BEGIN
+2021-11-25 15:00:00.426725 (Thread-1): Opening a new connection, currently in state closed
+2021-11-25 15:00:01.079745 (Thread-1): SQL status: SUCCESS 1 in 0.65 seconds
+2021-11-25 15:00:01.079745 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_partner".
+2021-11-25 15:00:01.079745 (Thread-1): On model.dbt_ods_delta.ad_mod_partner: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_ods_delta.ad_mod_partner"} */
+
+
+      create or replace transient table DWHHD_DEV.INM_DATASHARING.ad_mod_partner  as
+      ( 
+
+with  __dbt__CTE__vg_anschrift_akt as (
+select *
+from DWHHD_DEV.da.vg_anschrift_akt
+),  __dbt__CTE__vg_bankverbindung_akt as (
+select *
+from DWHHD_DEV.da.vg_bankverbindung_akt
+),  __dbt__CTE__vg_betriebswirtschaftdaten_akt as (
+select *
+from DWHHD_DEV.da.vg_betriebswirtschaftdaten_akt
+),  __dbt__CTE__vg_coc_auftrag_partner_akt as (
+select *
+from DWHHD_DEV.da.vg_coc_auftrag_partner_akt
+),  __dbt__CTE__vg_externereferenz_partner_akt as (
+select *
+from DWHHD_DEV.da.vg_externereferenz_partner_akt
+),  __dbt__CTE__vg_kommunikationskanal_akt as (
+select *
+from DWHHD_DEV.da.vg_kommunikationskanal_akt
+),  __dbt__CTE__vg_kostenstelle_akt as (
+select *
+from DWHHD_DEV.da.vg_kostenstelle_akt
+),  __dbt__CTE__vg_kostenstelle_zuordnung_akt as (
+select *
+from DWHHD_DEV.da.vg_kostenstelle_zuordnung_akt
+),  __dbt__CTE__vg_marketingmassnahme_akt as (
+select *
+from DWHHD_DEV.da.vg_marketingmassnahme_akt
+),  __dbt__CTE__vg_partner_akt as (
+select *
+from DWHHD_DEV.da.vg_partner_akt
+),  __dbt__CTE__vg_partner_kennzeichen_akt as (
+select *
+from DWHHD_DEV.da.vg_partner_kennzeichen_akt
+),  __dbt__CTE__vg_partnerbeziehung_akt as (
+select *
+from DWHHD_DEV.da.vg_partnerbeziehung_akt
+),  __dbt__CTE__vg_vermittlervereinbarung_akt as (
+select *
+from DWHHD_DEV.da.vg_vermittlervereinbarung_akt
+),  __dbt__CTE__vg_vermittlervertrag_akt as (
+select *
+from DWHHD_DEV.da.vg_vermittlervertrag_akt
+),  __dbt__CTE__vg_wirtschaftszweig_akt as (
+select *
+from DWHHD_DEV.da.vg_wirtschaftszweig_akt
+),source_data as (
+
+SELECT DISTINCT DWH_PARTNER_ID  FROM (
+SELECT DWH_PARTNER_ID  FROM __dbt__CTE__vg_anschrift_akt
+UNION ALL
+SELECT DWH_PARTNER_ID  FROM __dbt__CTE__vg_bankverbindung_akt
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_betriebswirtschaftdaten_akt
+UNION ALL 
+SELECT PARTNER_ID AS DWH_PARTNER_ID FROM __dbt__CTE__vg_coc_auftrag_partner_akt
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_externereferenz_partner_akt
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_kommunikationskanal_akt
+UNION ALL 
+SELECT DWH_KOSTENSTELLEN_ID AS DWH_PARTNER_ID FROM __dbt__CTE__vg_kostenstelle_akt
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_kostenstelle_zuordnung_akt WHERE TYP = 'KST-MA'
+UNION ALL 
+SELECT DWH_KOSTENSTELLEN_ID AS DWH_PARTNER_ID FROM __dbt__CTE__vg_kostenstelle_zuordnung_akt WHERE TYP = 'OE-KST'
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_marketingmassnahme_akt 
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_partner_akt
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_partner_kennzeichen_akt
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_partnerbeziehung_akt
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_vermittlervereinbarung_akt
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_vermittlervertrag_akt
+UNION ALL 
+SELECT DWH_PARTNER_ID FROM __dbt__CTE__vg_wirtschaftszweig_akt
+)
+ORDER BY 1
+
+					)
+
+select *
+from source_data
+      );
+2021-11-25 15:00:03.149447 (Thread-1): SQL status: SUCCESS 1 in 2.07 seconds
+2021-11-25 15:00:03.153449 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_partner".
+2021-11-25 15:00:03.153449 (Thread-1): On model.dbt_ods_delta.ad_mod_partner: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_ods_delta.ad_mod_partner"} */
+
+        ALTER TABLE DWHHD_DEV.INM_DATASHARING.ad_mod_partner ADD CONSTRAINT AD_MOD_PARTNER_PK PRIMARY KEY (DWH_PARTNER_ID)
+2021-11-25 15:00:03.319672 (Thread-1): SQL status: SUCCESS 1 in 0.17 seconds
+2021-11-25 15:00:03.321672 (Thread-1): On model.dbt_ods_delta.ad_mod_partner: COMMIT
+2021-11-25 15:00:03.322671 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_partner".
+2021-11-25 15:00:03.322671 (Thread-1): On model.dbt_ods_delta.ad_mod_partner: COMMIT
+2021-11-25 15:00:03.431936 (Thread-1): SQL status: SUCCESS 1 in 0.11 seconds
+2021-11-25 15:00:03.434921 (Thread-1): finished collecting timing info
+2021-11-25 15:00:03.435927 (Thread-1): On model.dbt_ods_delta.ad_mod_partner: Close
+2021-11-25 15:00:03.576644 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '40ca1112-0499-4c83-8d65-c82bb16136ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F6DA59608>]}
+2021-11-25 15:00:03.577637 (Thread-1): 16:00:03 | 3 of 8 OK created table model INM_DATASHARING.ad_mod_partner......... [SUCCESS 1 in 3.22s]
+2021-11-25 15:00:03.577637 (Thread-1): Finished running node model.dbt_ods_delta.ad_mod_partner
+2021-11-25 15:00:03.578635 (Thread-1): Began running node model.dbt_ods_delta.ad_mod_vertrag
+2021-11-25 15:00:03.578635 (Thread-1): 16:00:03 | 4 of 8 START table model INM_DATASHARING.ad_mod_vertrag.............. [RUN]
+2021-11-25 15:00:03.581629 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_vertrag".
+2021-11-25 15:00:03.581629 (Thread-1): Compiling model.dbt_ods_delta.ad_mod_vertrag
+2021-11-25 15:00:03.641636 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.ad_mod_vertrag"
+2021-11-25 15:00:03.642632 (Thread-1): finished collecting timing info
+2021-11-25 15:00:03.646630 (Thread-1): Writing runtime SQL for node "model.dbt_ods_delta.ad_mod_vertrag"
+2021-11-25 15:00:03.669633 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_vertrag".
+2021-11-25 15:00:03.670632 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag: BEGIN
+2021-11-25 15:00:03.670632 (Thread-1): Opening a new connection, currently in state closed
+2021-11-25 15:00:04.180655 (Thread-1): SQL status: SUCCESS 1 in 0.51 seconds
+2021-11-25 15:00:04.180655 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_vertrag".
+2021-11-25 15:00:04.181660 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_ods_delta.ad_mod_vertrag"} */
+
+
+      create or replace transient table DWHHD_DEV.INM_DATASHARING.ad_mod_vertrag  as
+      (
+
+with  __dbt__CTE__vg_coc_auftrag_vertrag_akt as (
+select *
+from DWHHD_DEV.da.vg_coc_auftrag_vertrag_akt
+),  __dbt__CTE__vg_externereferenz_akt as (
+select *
+from DWHHD_DEV.da.vg_externereferenz_akt
+),  __dbt__CTE__vg_internereferenz_akt as (
+select *
+from DWHHD_DEV.da.vg_internereferenz_akt
+),  __dbt__CTE__vg_lv_bezugsrecht_akt as (
+select *
+from DWHHD_DEV.da.vg_lv_bezugsrecht_akt
+),  __dbt__CTE__vg_lv_leistung_akt as (
+select *
+from DWHHD_DEV.da.vg_lv_leistung_akt
+),  __dbt__CTE__vg_mahnung_akt as (
+select *
+from DWHHD_DEV.da.vg_mahnung_akt
+),  __dbt__CTE__vg_rolle_akt as (
+select *
+from DWHHD_DEV.da.vg_rolle_akt
+),  __dbt__CTE__vg_vertrag_akt as (
+select *
+from DWHHD_DEV.da.vg_vertrag_akt
+),  __dbt__CTE__vg_vertragsbeziehung_akt as (
+select *
+from DWHHD_DEV.da.vg_vertragsbeziehung_akt
+),  __dbt__CTE__vg_vertragskontext_akt as (
+select *
+from DWHHD_DEV.da.vg_vertragskontext_akt
+),  __dbt__CTE__vg_beitrag_akt as (
+select *
+from DWHHD_DEV.da.vg_beitrag_akt
+),  __dbt__CTE__vg_bonusmalus_akt as (
+select *
+from DWHHD_DEV.da.vg_bonusmalus_akt
+),  __dbt__CTE__vg_deckung_akt as (
+select *
+from DWHHD_DEV.da.vg_deckung_akt
+),  __dbt__CTE__vg_drittrechtglaeubiger_akt as (
+select *
+from DWHHD_DEV.da.vg_drittrechtglaeubiger_akt
+),  __dbt__CTE__vg_fremdvertrag_akt as (
+select *
+from DWHHD_DEV.da.vg_fremdvertrag_akt
+),  __dbt__CTE__vg_kfzspezifischemerkmale_akt as (
+select *
+from DWHHD_DEV.da.vg_kfzspezifischemerkmale_akt
+),  __dbt__CTE__vg_klauselnbedingungen_akt as (
+select *
+from DWHHD_DEV.da.vg_klauselnbedingungen_akt
+),  __dbt__CTE__vg_kraftfahrzeug_akt as (
+select *
+from DWHHD_DEV.da.vg_kraftfahrzeug_akt
+),  __dbt__CTE__vg_lv_leistung_flv_akt as (
+select *
+from DWHHD_DEV.da.vg_lv_leistung_flv_akt
+),  __dbt__CTE__vg_lv_leistung_konv_akt as (
+select *
+from DWHHD_DEV.da.vg_lv_leistung_konv_akt
+),  __dbt__CTE__vg_nutzer_akt as (
+select *
+from DWHHD_DEV.da.vg_nutzer_akt
+),  __dbt__CTE__vg_selbstbehalte_akt as (
+select *
+from DWHHD_DEV.da.vg_selbstbehalte_akt
+),  __dbt__CTE__vg_stufung_akt as (
+select *
+from DWHHD_DEV.da.vg_stufung_akt
+),  __dbt__CTE__vg_typregio_akt as (
+select *
+from DWHHD_DEV.da.vg_typregio_akt
+),  __dbt__CTE__vg_versichertesobjekt_akt as (
+select *
+from DWHHD_DEV.da.vg_versichertesobjekt_akt
+),  __dbt__CTE__vg_versichertesobjektkfz_akt as (
+select *
+from DWHHD_DEV.da.vg_versichertesobjektkfz_akt
+),  __dbt__CTE__vg_vertragstandard_akt as (
+select *
+from DWHHD_DEV.da.vg_vertragstandard_akt
+),  __dbt__CTE__vg_vertragsteil_akt as (
+select *
+from DWHHD_DEV.da.vg_vertragsteil_akt
+),  __dbt__CTE__vg_vertragsteilbuendel_akt as (
+select *
+from DWHHD_DEV.da.vg_vertragsteilbuendel_akt
+),  __dbt__CTE__vg_zuschl_nachl_akt as (
+select *
+from DWHHD_DEV.da.vg_zuschl_nachl_akt
+),  __dbt__CTE__vg_wertungsgrundlteilung_akt as (
+select *
+from DWHHD_DEV.da.vg_wertungsgrundlteilung_akt
+),source_data as (
+
+
+select distinct tik_vertrag  from (
+select tik_vertrag from __dbt__CTE__vg_coc_auftrag_vertrag_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_externereferenz_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_internereferenz_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_lv_bezugsrecht_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_lv_leistung_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_mahnung_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_rolle_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_vertrag_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_vertragsbeziehung_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_vertragskontext_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_beitrag_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_bonusmalus_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_deckung_akt
+union all
+select tik_police as tik_vertrag from __dbt__CTE__vg_drittrechtglaeubiger_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_fremdvertrag_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_kfzspezifischemerkmale_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_klauselnbedingungen_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_kraftfahrzeug_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_lv_leistung_flv_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_lv_leistung_konv_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_nutzer_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_selbstbehalte_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_stufung_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_typregio_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_versichertesobjekt_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_versichertesobjektkfz_akt 
+union all
+select tik_police as tik_vertrag from __dbt__CTE__vg_vertragstandard_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_vertragsteil_akt
+union all
+select tik_vertrag from __dbt__CTE__vg_vertragsteilbuendel_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_zuschl_nachl_akt 
+union all
+select tik_vertrag from __dbt__CTE__vg_wertungsgrundlteilung_akt
+) 
+ORDER BY 1
+
+					)
+
+select *
+from source_data
+      );
+2021-11-25 15:00:07.662150 (Thread-1): SQL status: SUCCESS 1 in 3.48 seconds
+2021-11-25 15:00:07.664152 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag: COMMIT
+2021-11-25 15:00:07.664152 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_vertrag".
+2021-11-25 15:00:07.665149 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag: COMMIT
+2021-11-25 15:00:07.770160 (Thread-1): SQL status: SUCCESS 1 in 0.11 seconds
+2021-11-25 15:00:07.771154 (Thread-1): finished collecting timing info
+2021-11-25 15:00:07.771154 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag: Close
+2021-11-25 15:00:07.898152 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '40ca1112-0499-4c83-8d65-c82bb16136ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F6EC704C8>]}
+2021-11-25 15:00:07.899157 (Thread-1): 16:00:07 | 4 of 8 OK created table model INM_DATASHARING.ad_mod_vertrag......... [SUCCESS 1 in 4.32s]
+2021-11-25 15:00:07.899157 (Thread-1): Finished running node model.dbt_ods_delta.ad_mod_vertrag
+2021-11-25 15:00:07.900156 (Thread-1): Began running node model.dbt_ods_delta.ad_chng_vertrag_status
+2021-11-25 15:00:07.900156 (Thread-1): 16:00:07 | 5 of 8 START table model INM_DATASHARING.ad_chng_vertrag_status...... [RUN]
+2021-11-25 15:00:07.902158 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.ad_chng_vertrag_status".
+2021-11-25 15:00:07.902158 (Thread-1): Compiling model.dbt_ods_delta.ad_chng_vertrag_status
+2021-11-25 15:00:07.945156 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.ad_chng_vertrag_status"
+2021-11-25 15:00:07.947155 (Thread-1): finished collecting timing info
+2021-11-25 15:00:07.951156 (Thread-1): Writing runtime SQL for node "model.dbt_ods_delta.ad_chng_vertrag_status"
+2021-11-25 15:00:07.958161 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_chng_vertrag_status".
+2021-11-25 15:00:07.959161 (Thread-1): On model.dbt_ods_delta.ad_chng_vertrag_status: BEGIN
+2021-11-25 15:00:07.959161 (Thread-1): Opening a new connection, currently in state closed
+2021-11-25 15:00:08.558392 (Thread-1): SQL status: SUCCESS 1 in 0.60 seconds
+2021-11-25 15:00:08.558392 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_chng_vertrag_status".
+2021-11-25 15:00:08.559397 (Thread-1): On model.dbt_ods_delta.ad_chng_vertrag_status: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_ods_delta.ad_chng_vertrag_status"} */
+
+
+      create or replace transient table DWHHD_DEV.INM_DATASHARING.ad_chng_vertrag_status  as
+      (
+
+with  __dbt__CTE__od_vertrag_akt as (
+select *
+from DWHHD_DEV.da.od_vertrag_akt
+),  __dbt__CTE__od_vertragskontext_akt as (
+select *
+from DWHHD_DEV.da.od_vertragskontext_akt
+),  __dbt__CTE__vs_vertrag as (
+select *
+from DWHHD_DEV.da.vs_vertrag
+),source_data as (
+
+SELECT
+	TIK_POLICE,
+	TIK_VERTRAG,
+	DWH_POLICE_ID,
+	DWH_VERTRAG_ID,
+	VERTRAGSTDOB,
+	VERTRAGSOB,
+	STATUSVERTRAG,
+	ISTSTORNIERTIND,
+	STORNOGRUND,
+	STATUS,
+	314 AS ODS_LAUF_ID,
+	CURRENT_TIMESTAMP AS T_AEND_DAT
+FROM
+	(
+	SELECT
+		ROW_NUMBER() OVER (PARTITION BY vert.DWH_VERTRAG_ID,
+		vert.VERTRAGSTDOB
+	ORDER BY
+		vertStornogrund.BIZPRCNR DESC) SORTER,
+		vert.TIK_POLICE,
+		vert.TIK_VERTRAG,
+		vert.DWH_POLICE_ID,
+		vert.DWH_VERTRAG_ID,
+		vert.VERTRAGSTDOB,
+		vert.VERTRAGSOB,
+		vert.STATUSVERTRAG,
+		vert.ISTSTORNIERTIND,
+		vv.STATUS,
+		vertStornogrund.STORNOGRUND
+	FROM
+		__dbt__CTE__od_vertrag_akt vert
+	INNER JOIN __dbt__CTE__od_vertragskontext_akt vv
+        ON
+		vert.TIK_VERTRAG = vv.TIK_VERTRAG
+		AND CURRENT_TIMESTAMP < vv.UNGUELTIGAB
+		AND CURRENT_TIMESTAMP >= vv.GUELTIGVON
+		AND vv.STATUS = 'STOR'
+		AND vv.STATUSDATUM < CURRENT_TIMESTAMP
+	INNER JOIN __dbt__CTE__vs_vertrag vertStornogrund
+        ON
+		vert.DWH_VERTRAG_ID = vertStornogrund.DWH_VERTRAG_ID
+		AND vertStornogrund.BIZPRCNR < vert.BIZPRCNR
+		AND vertStornogrund.ISTSTORNIERTIND = 1
+	WHERE
+		vert.ISTSTORNIERTIND = 0
+)
+WHERE
+	SORTER = 1
+	AND TIK_POLICE IS NOT NULL
+	AND TIK_VERTRAG IS NOT NULL
+
+					)
+
+select *
+from source_data
+      );
+2021-11-25 15:00:12.360338 (Thread-1): SQL status: SUCCESS 1 in 3.80 seconds
+2021-11-25 15:00:12.361340 (Thread-1): On model.dbt_ods_delta.ad_chng_vertrag_status: COMMIT
+2021-11-25 15:00:12.362340 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_chng_vertrag_status".
+2021-11-25 15:00:12.362340 (Thread-1): On model.dbt_ods_delta.ad_chng_vertrag_status: COMMIT
+2021-11-25 15:00:12.437353 (Thread-1): SQL status: SUCCESS 1 in 0.08 seconds
+2021-11-25 15:00:12.438345 (Thread-1): finished collecting timing info
+2021-11-25 15:00:12.439344 (Thread-1): On model.dbt_ods_delta.ad_chng_vertrag_status: Close
+2021-11-25 15:00:12.551342 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '40ca1112-0499-4c83-8d65-c82bb16136ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F6ECA5A48>]}
+2021-11-25 15:00:12.552342 (Thread-1): 16:00:12 | 5 of 8 OK created table model INM_DATASHARING.ad_chng_vertrag_status. [SUCCESS 1 in 4.65s]
+2021-11-25 15:00:12.553343 (Thread-1): Finished running node model.dbt_ods_delta.ad_chng_vertrag_status
+2021-11-25 15:00:12.553343 (Thread-1): Began running node model.dbt_ods_delta.ad_mod_schaden_coc
+2021-11-25 15:00:12.554341 (Thread-1): 16:00:12 | 6 of 8 START table model INM_DATASHARING.ad_mod_schaden_coc.......... [RUN]
+2021-11-25 15:00:12.561341 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_schaden_coc".
+2021-11-25 15:00:12.562346 (Thread-1): Compiling model.dbt_ods_delta.ad_mod_schaden_coc
+2021-11-25 15:00:12.584346 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.ad_mod_schaden_coc"
+2021-11-25 15:00:12.585346 (Thread-1): finished collecting timing info
+2021-11-25 15:00:12.590346 (Thread-1): Writing runtime SQL for node "model.dbt_ods_delta.ad_mod_schaden_coc"
+2021-11-25 15:00:12.594339 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_schaden_coc".
+2021-11-25 15:00:12.594339 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden_coc: BEGIN
+2021-11-25 15:00:12.594339 (Thread-1): Opening a new connection, currently in state closed
+2021-11-25 15:00:12.981363 (Thread-1): SQL status: SUCCESS 1 in 0.39 seconds
+2021-11-25 15:00:12.981363 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_schaden_coc".
+2021-11-25 15:00:12.981363 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden_coc: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_ods_delta.ad_mod_schaden_coc"} */
+
+
+      create or replace transient table DWHHD_DEV.INM_DATASHARING.ad_mod_schaden_coc  as
+      (
+
+with  __dbt__CTE__od_schaden_akt as (
+select *
+from DWHHD_DEV.da.od_schaden_akt
+),  __dbt__CTE__od_coc_auftrag_vertrag_akt as (
+select *
+from DWHHD_DEV.da.od_coc_auftrag_vertrag_akt
+),source_data as (
+
+SELECT
+	ad.DWH_SCHADEN_ID
+FROM
+	DWHHD_DEV.INM_DATASHARING.ad_mod_schaden ad
+INNER JOIN __dbt__CTE__od_schaden_akt s
+ON
+	ad.DWH_SCHADEN_ID = s.DWH_SCHADEN_ID
+WHERE
+	s.TIK_VERTRAG NOT IN
+  (
+	SELECT
+		TIK_VERTRAG
+	FROM
+		__dbt__CTE__od_coc_auftrag_vertrag_akt 
+	WHERE
+		DT_COC_SPERRE <= current_timestamp
+		OR AENDERUNGS_KZ = 'L'
+  )
+GROUP BY
+	ad.DWH_SCHADEN_ID
+ORDER BY
+	1
+
+					)
+
+select *
+from source_data
+      );
+2021-11-25 15:00:14.972017 (Thread-1): SQL status: SUCCESS 1 in 1.99 seconds
+2021-11-25 15:00:14.974013 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden_coc: COMMIT
+2021-11-25 15:00:14.974013 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_schaden_coc".
+2021-11-25 15:00:14.974013 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden_coc: COMMIT
+2021-11-25 15:00:15.042019 (Thread-1): SQL status: SUCCESS 1 in 0.07 seconds
+2021-11-25 15:00:15.043039 (Thread-1): finished collecting timing info
+2021-11-25 15:00:15.044155 (Thread-1): On model.dbt_ods_delta.ad_mod_schaden_coc: Close
+2021-11-25 15:00:15.158032 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '40ca1112-0499-4c83-8d65-c82bb16136ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F6ECA2C88>]}
+2021-11-25 15:00:15.159033 (Thread-1): 16:00:15 | 6 of 8 OK created table model INM_DATASHARING.ad_mod_schaden_coc..... [SUCCESS 1 in 2.60s]
+2021-11-25 15:00:15.161023 (Thread-1): Finished running node model.dbt_ods_delta.ad_mod_schaden_coc
+2021-11-25 15:00:15.161023 (Thread-1): Began running node model.dbt_ods_delta.ad_mod_partner_coc
+2021-11-25 15:00:15.162021 (Thread-1): 16:00:15 | 7 of 8 START table model INM_DATASHARING.ad_mod_partner_coc.......... [RUN]
+2021-11-25 15:00:15.164018 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_partner_coc".
+2021-11-25 15:00:15.164018 (Thread-1): Compiling model.dbt_ods_delta.ad_mod_partner_coc
+2021-11-25 15:00:15.182042 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.ad_mod_partner_coc"
+2021-11-25 15:00:15.184051 (Thread-1): finished collecting timing info
+2021-11-25 15:00:15.188132 (Thread-1): Writing runtime SQL for node "model.dbt_ods_delta.ad_mod_partner_coc"
+2021-11-25 15:00:15.192101 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_partner_coc".
+2021-11-25 15:00:15.193090 (Thread-1): On model.dbt_ods_delta.ad_mod_partner_coc: BEGIN
+2021-11-25 15:00:15.193090 (Thread-1): Opening a new connection, currently in state closed
+2021-11-25 15:00:15.597407 (Thread-1): SQL status: SUCCESS 1 in 0.40 seconds
+2021-11-25 15:00:15.598407 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_partner_coc".
+2021-11-25 15:00:15.598407 (Thread-1): On model.dbt_ods_delta.ad_mod_partner_coc: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_ods_delta.ad_mod_partner_coc"} */
+
+
+      create or replace transient table DWHHD_DEV.INM_DATASHARING.ad_mod_partner_coc  as
+      (
+
+with  __dbt__CTE__od_coc_auftrag_partner_akt as (
+select *
+from DWHHD_DEV.da.od_coc_auftrag_partner_akt
+),source_data as (
+
+SELECT
+	DWH_PARTNER_ID
+FROM
+	DWHHD_DEV.INM_DATASHARING.ad_mod_partner 
+WHERE
+DWH_PARTNER_ID NOT IN
+     (
+SELECT
+	TIK_PARTNER
+FROM
+	__dbt__CTE__od_coc_auftrag_partner_akt
+WHERE
+	DT_COC_SPERRE <= CURRENT_TIMESTAMP
+	OR AENDERUNGS_KZ = 'L'
+    )
+
+					)
+
+select *
+from source_data
+      );
+2021-11-25 15:00:17.141539 (Thread-1): SQL status: SUCCESS 1 in 1.54 seconds
+2021-11-25 15:00:17.143542 (Thread-1): On model.dbt_ods_delta.ad_mod_partner_coc: COMMIT
+2021-11-25 15:00:17.143542 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_partner_coc".
+2021-11-25 15:00:17.143542 (Thread-1): On model.dbt_ods_delta.ad_mod_partner_coc: COMMIT
+2021-11-25 15:00:17.223543 (Thread-1): SQL status: SUCCESS 1 in 0.08 seconds
+2021-11-25 15:00:17.224539 (Thread-1): finished collecting timing info
+2021-11-25 15:00:17.224539 (Thread-1): On model.dbt_ods_delta.ad_mod_partner_coc: Close
+2021-11-25 15:00:17.343546 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '40ca1112-0499-4c83-8d65-c82bb16136ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F6E3F1EC8>]}
+2021-11-25 15:00:17.344541 (Thread-1): 16:00:17 | 7 of 8 OK created table model INM_DATASHARING.ad_mod_partner_coc..... [SUCCESS 1 in 2.18s]
+2021-11-25 15:00:17.345541 (Thread-1): Finished running node model.dbt_ods_delta.ad_mod_partner_coc
+2021-11-25 15:00:17.345541 (Thread-1): Began running node model.dbt_ods_delta.ad_mod_vertrag_coc
+2021-11-25 15:00:17.345541 (Thread-1): 16:00:17 | 8 of 8 START table model INM_DATASHARING.ad_mod_vertrag_coc.......... [RUN]
+2021-11-25 15:00:17.348547 (Thread-1): Acquiring new snowflake connection "model.dbt_ods_delta.ad_mod_vertrag_coc".
+2021-11-25 15:00:17.348547 (Thread-1): Compiling model.dbt_ods_delta.ad_mod_vertrag_coc
+2021-11-25 15:00:17.365563 (Thread-1): Writing injected SQL for node "model.dbt_ods_delta.ad_mod_vertrag_coc"
+2021-11-25 15:00:17.366544 (Thread-1): finished collecting timing info
+2021-11-25 15:00:17.371542 (Thread-1): Writing runtime SQL for node "model.dbt_ods_delta.ad_mod_vertrag_coc"
+2021-11-25 15:00:17.374541 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_vertrag_coc".
+2021-11-25 15:00:17.375542 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag_coc: BEGIN
+2021-11-25 15:00:17.375542 (Thread-1): Opening a new connection, currently in state closed
+2021-11-25 15:00:17.770550 (Thread-1): SQL status: SUCCESS 1 in 0.40 seconds
+2021-11-25 15:00:17.770550 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_vertrag_coc".
+2021-11-25 15:00:17.770550 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag_coc: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "default", "target_name": "dev", "node_id": "model.dbt_ods_delta.ad_mod_vertrag_coc"} */
+
+
+      create or replace transient table DWHHD_DEV.INM_DATASHARING.ad_mod_vertrag_coc  as
+      (
+
+with  __dbt__CTE__od_coc_auftrag_vertrag_akt as (
+select *
+from DWHHD_DEV.da.od_coc_auftrag_vertrag_akt
+),source_data as (
+
+SELECT
+	TIK_VERTRAG
+FROM
+	DWHHD_DEV.INM_DATASHARING.ad_mod_vertrag 
+WHERE
+	TIK_VERTRAG NOT IN
+     (
+	SELECT
+		TIK_VERTRAG
+	FROM
+		__dbt__CTE__od_coc_auftrag_vertrag_akt
+	WHERE
+		DT_COC_SPERRE <= current_timestamp
+		OR AENDERUNGS_KZ = 'L'
+    )
+
+	)
+
+select *
+from source_data
+      );
+2021-11-25 15:00:20.613073 (Thread-1): SQL status: SUCCESS 1 in 2.84 seconds
+2021-11-25 15:00:20.615078 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag_coc: COMMIT
+2021-11-25 15:00:20.615078 (Thread-1): Using snowflake connection "model.dbt_ods_delta.ad_mod_vertrag_coc".
+2021-11-25 15:00:20.615078 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag_coc: COMMIT
+2021-11-25 15:00:20.709173 (Thread-1): SQL status: SUCCESS 1 in 0.09 seconds
+2021-11-25 15:00:20.711162 (Thread-1): finished collecting timing info
+2021-11-25 15:00:20.711162 (Thread-1): On model.dbt_ods_delta.ad_mod_vertrag_coc: Close
+2021-11-25 15:00:20.840161 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '40ca1112-0499-4c83-8d65-c82bb16136ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F6EAA2688>]}
+2021-11-25 15:00:20.841159 (Thread-1): 16:00:20 | 8 of 8 OK created table model INM_DATASHARING.ad_mod_vertrag_coc..... [SUCCESS 1 in 3.49s]
+2021-11-25 15:00:20.841159 (Thread-1): Finished running node model.dbt_ods_delta.ad_mod_vertrag_coc
+2021-11-25 15:00:20.912197 (MainThread): Acquiring new snowflake connection "master".
+2021-11-25 15:00:20.913198 (MainThread): Using snowflake connection "master".
+2021-11-25 15:00:20.913198 (MainThread): On master: BEGIN
+2021-11-25 15:00:20.913198 (MainThread): Opening a new connection, currently in state closed
+2021-11-25 15:00:21.450299 (MainThread): SQL status: SUCCESS 1 in 0.54 seconds
+2021-11-25 15:00:21.451292 (MainThread): On master: COMMIT
+2021-11-25 15:00:21.451292 (MainThread): Using snowflake connection "master".
+2021-11-25 15:00:21.451292 (MainThread): On master: COMMIT
+2021-11-25 15:00:21.677458 (MainThread): SQL status: SUCCESS 1 in 0.23 seconds
+2021-11-25 15:00:21.677458 (MainThread): On master: Close
+2021-11-25 15:00:21.780422 (MainThread): 16:00:21 | 
+2021-11-25 15:00:21.780422 (MainThread): 16:00:21 | Finished running 8 table models in 39.19s.
+2021-11-25 15:00:21.783416 (MainThread): Connection 'master' was properly closed.
+2021-11-25 15:00:21.783416 (MainThread): Connection 'list_DWHHD_DEV' was properly closed.
+2021-11-25 15:00:21.783416 (MainThread): Connection 'list_DWHHD_DEV_INM_DATASHARING' was properly closed.
+2021-11-25 15:00:21.783416 (MainThread): Connection 'model.dbt_ods_delta.ad_mod_vertrag_coc' was properly closed.
+2021-11-25 15:00:21.809592 (MainThread): 
+2021-11-25 15:00:21.809592 (MainThread): Completed successfully
+2021-11-25 15:00:21.812420 (MainThread): 
+Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+2021-11-25 15:00:21.814422 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F6BE1A108>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F6BE370C8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F6DCB8B88>]}
+2021-11-25 15:00:21.814422 (MainThread): Flushing usage events
+2021-11-25 15:00:21.849599 (MainThread): The 'warn' method is deprecated, use 'warning' instead
+2021-11-25 15:00:21.850440 (MainThread): Error sending message, disabling tracking

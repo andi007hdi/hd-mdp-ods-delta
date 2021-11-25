@@ -1,5 +1,5 @@
 {{ config( materialized='table', unique_key="dwh_partner_id", 
-post_hook = "ALTER TABLE {{ schema }}.AD_MOD_PARTNER ADD CONSTRAINT AD_MOD_PARTNER_PK PRIMARY KEY (DWH_PARTNER_ID)" ) }} 
+post_hook = "ALTER TABLE {{ this }} ADD CONSTRAINT AD_MOD_PARTNER_PK PRIMARY KEY (DWH_PARTNER_ID)" ) }} 
 
 with source_data as (
 
