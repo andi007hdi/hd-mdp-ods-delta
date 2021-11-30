@@ -1,7 +1,7 @@
 
 
       create or replace transient table DWHHD_DEV.INM_DATASHARING.ad_mod_vertrag_coc  as
-      (
+      (  
 
 with  __dbt__CTE__od_coc_auftrag_vertrag_akt as (
 select *
