@@ -10,7 +10,7 @@ with source_data as (
     VK.TIK_VERTRAG                        AS VERTRAG_ID,
     VK.VERTRAGTYP_ID                      AS VERTRAGSART_ID,
     VK.PRODUKTPARTNER_ID                  AS PRODUKTPARTNER_ID,
-    NVL(
+    cast(NVL(
         (
             CASE
                 WHEN VSV.STATUSVERTRAG IS NOT NULL
@@ -50,7 +50,7 @@ with source_data as (
                     NULL
             END
         )
-    )                                     AS STATUS_ID,
+    )  as varchar(255) )                                   AS STATUS_ID,
     COALESCE(
         VSV.SPARTE_REPORTING,
         VK.SPARTE_ID
@@ -586,11 +586,11 @@ FROM
     )                                BEZ ON VK.TIK_VERTRAG = BEZ.TIK_VERTRAG
 UNION ALL 
 SELECT
-    13874                             AS LOAD_NR,
+    (SELECT max(ods_lauf_id) FROM INM_DATASHARING.AD_VERARB_ODS)                             AS LOAD_NR,
     VK.TIK_VERTRAG                    AS VERTRAG_ID,
     VK.VERTRAGTYP_ID                  AS VERTRAGSART_ID,
     VK.PRODUKTPARTNER_ID              AS PRODUKTPARTNER_ID,
-    (
+    cast( (
         CASE
             WHEN VK.STATUS = 'ABGNG'     THEN
                 'M||ZUSTAND||abgegangen'
@@ -619,7 +619,7 @@ SELECT
             ELSE
                 NULL
         END
-    )                                 AS STATUS_ID,
+    )   as varchar(255) )                                AS STATUS_ID,
     VK.SPARTE_ID                      AS SPARTE_ID,
     (
         CASE
