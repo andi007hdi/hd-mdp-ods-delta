@@ -1,6 +1,3 @@
-{{ config( materialized='table', unique_key="dwh_partner_id", 
-post_hook = "ALTER TABLE {{ this }} ADD CONSTRAINT AD_MOD_PARTNER_PK PRIMARY KEY (DWH_PARTNER_ID)" ) }} 
-
 with source_data as (
 
 SELECT DISTINCT DWH_PARTNER_ID  FROM (

@@ -1,5 +1,4 @@
-{{ config( materialized='table',
-           pre_hook =  "UPDATE INM_DATASHARING.AD_VERARB_ODS SET endezeit = CURRENT_TIMESTAMP, STATUS = 'done' WHERE ODS_LAUF_ID  = (SELECT max(ods_lauf_id) FROM INM_DATASHARING.AD_VERARB_ODS) AND PROZESSNAME ='2. Deltaermittlung'",
+{{ config( pre_hook =  "UPDATE INM_DATASHARING.AD_VERARB_ODS SET endezeit = CURRENT_TIMESTAMP, STATUS = 'done' WHERE ODS_LAUF_ID  = (SELECT max(ods_lauf_id) FROM INM_DATASHARING.AD_VERARB_ODS) AND PROZESSNAME ='2. Deltaermittlung'",
            post_hook = "DROP TABLE {{ this }}" ) }}
 
 with source_data as (
